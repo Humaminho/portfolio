@@ -11,9 +11,9 @@ module.exports = {
 			fontFamily: {
 				sans: ['var(--font-inter)'],
 			},
-      lineHeight: {
-        paragraph: '1.1rem',
-      }
+			lineHeight: {
+				paragraph: '1.1rem',
+			},
 		},
 		colors: {
 			transparent: 'transparent',
@@ -29,6 +29,8 @@ module.exports = {
 			'l-border': '#CACACA',
 			'l-text': '#0A0A0D',
 			footer: '#0E0B36',
+			'd-emph': '#5566FF',
+      'l-emph': '#220AB4'
 		},
 	},
 	plugins: [],

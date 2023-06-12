@@ -2,7 +2,7 @@
 
 export default function Carousel() {
 	return (
-		<div className="flex gap-7 align-center">
+		<div className="flex gap-7 align-center overflow-hidden">
 			<div>
 				<svg
 					width="31"
