@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<main className="px-7">
 			<section className="flex flex-col pt-24 items-start">
-				<div className="pb-12">
+				<div className="text-sm md:text-md pb-12">
 					<h2 className="text-2xl font-bold pb-8">GET TO KNOW ME_</h2>
 					<p className="pb-4 leading-paragraph">
 						I embarked on a journey that led me from studying Human

@@ -1,0 +1,11 @@
+@import 'mixins/slider';
+
+.menu {
+	@include slider;
+}
+.menu-top {
+	@include slider-top;
+}
+.menu-active {
+	@include slider-active;
+}

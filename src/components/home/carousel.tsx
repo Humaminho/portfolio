@@ -2,11 +2,11 @@
 
 export default function Carousel() {
 	return (
-		<div className="flex gap-7 align-center overflow-hidden">
+		<div className="flex gap-7 align-center scale-50 sm:scale-75 md:scale-90 lg:scale-100">
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="30"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 30 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +68,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +89,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -110,13 +110,13 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="30"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 30 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_138_49)">
+					<g clipPath="url(#clip0_138_49)">
 						<path
 							fillRule="evenodd"
 							clipRule="evenodd"
@@ -134,8 +134,8 @@ export default function Carousel() {
 
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -148,8 +148,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="30"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 30 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@ export default function Carousel() {
 						r="14.9201"
 						fill="currentColor"
 					/>
-					<g clip-path="url(#clip0_140_54)">
+					<g clipPath="url(#clip0_140_54)">
 						<path
 							className="text-white dark:text-black"
 							d="M14.501 8.20001C11.701 8.20001 9.95098 9.60001 9.25098 12.4C10.301 11 11.526 10.475 12.926 10.825C13.7249 11.0245 14.2954 11.6038 14.928 12.246C15.9579 13.2908 17.1487 14.5 19.751 14.5C22.551 14.5 24.301 13.1 25.001 10.3C23.951 11.7 22.726 12.225 21.326 11.875C20.5271 11.6755 19.9566 11.0963 19.324 10.454C18.295 9.40926 17.1041 8.20001 14.501 8.20001ZM9.25098 14.5C6.45098 14.5 4.70098 15.9 4.00098 18.7C5.05098 17.3 6.27598 16.775 7.67598 17.125C8.47485 17.3245 9.04535 17.9038 9.67798 18.546C10.7079 19.5908 11.8987 20.8 14.501 20.8C17.301 20.8 19.051 19.4 19.751 16.6C18.701 18 17.476 18.525 16.076 18.175C15.2771 17.9755 14.7066 17.3963 14.074 16.754C13.045 15.7093 11.8541 14.5 9.25098 14.5Z"
@@ -181,8 +181,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="30"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 30 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -195,8 +195,8 @@ export default function Carousel() {
 					/>
 					<path
 						className="text-white dark:text-black"
-						fill-rule="evenodd"
-						clip-rule="evenodd"
+						fillRule="evenodd"
+						clipRule="evenodd"
 						d="M11.5271 12.7667C11.1661 12.7667 10.8085 12.8378 10.4749 12.976C10.1413 13.1142 9.83819 13.3167 9.58287 13.572C9.32754 13.8274 9.12501 14.1305 8.98682 14.4641C8.84864 14.7977 8.77752 15.1552 8.77752 15.5163C8.77752 15.8774 8.84864 16.235 8.98682 16.5686C9.12501 16.9022 9.32754 17.2053 9.58287 17.4606C9.83819 17.7159 10.1413 17.9185 10.4749 18.0566C10.8085 18.1948 11.1661 18.2659 11.5271 18.2659H14.2768V15.5717C14.2763 15.5348 14.2763 15.4979 14.2768 15.461V12.7667H11.5271ZM14.2768 11.1699H11.5271C10.7978 11.1699 10.0982 10.8802 9.58249 10.3644C9.06674 9.84867 8.77699 9.14916 8.77699 8.41977C8.77699 7.69039 9.06674 6.99087 9.58249 6.47512C10.0982 5.95936 10.7978 5.66962 11.5271 5.66962H14.2768V11.1699ZM15.8735 5.66962V11.1699H18.6232C19.3432 11.1558 20.0289 10.8598 20.5331 10.3456C21.0373 9.83137 21.3197 9.13993 21.3197 8.41977C21.3197 7.69962 21.0373 7.00818 20.5331 6.49397C20.0289 5.97976 19.3432 5.68378 18.6232 5.66962H15.8735ZM18.6232 12.7656C17.9014 12.7655 17.2086 13.0492 16.6941 13.5555C16.1797 14.0617 15.885 14.75 15.8735 15.4716V15.56C15.8823 16.1018 16.0511 16.6289 16.3585 17.0752C16.6659 17.5215 17.0984 17.8669 17.6015 18.0682C18.1047 18.2695 18.6561 18.3176 19.1865 18.2065C19.7169 18.0954 20.2026 17.8301 20.5827 17.4438C20.9628 17.0575 21.2202 16.5676 21.3228 16.0354C21.4253 15.5033 21.3683 14.9528 21.1589 14.453C20.9496 13.9531 20.5972 13.5263 20.146 13.2261C19.6949 12.9259 19.1651 12.7657 18.6232 12.7656ZM11.5271 19.8627C10.9831 19.8625 10.4511 20.0236 9.99865 20.3258C9.54617 20.6279 9.19344 21.0574 8.98508 21.56C8.77673 22.0626 8.7221 22.6157 8.82812 23.1494C8.93413 23.683 9.19603 24.1733 9.58067 24.5581C9.96532 24.9429 10.4554 25.2049 10.9891 25.3112C11.5227 25.4174 12.0758 25.363 12.5785 25.1548C13.0812 24.9466 13.5108 24.5941 13.8131 24.1417C14.1154 23.6893 14.2768 23.1575 14.2768 22.6134V19.8627H11.5271Z"
 						fill="currentColor"
 					/>
@@ -204,8 +204,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +217,7 @@ export default function Carousel() {
 						ry="14.9203"
 						fill="currentColor"
 					/>
-					<g clip-path="url(#clip0_0_1)">
+					<g clipPath="url(#clip0_0_1)">
 						<path
 							className="text-white dark:text-black"
 							d="M21.7511 19.779L16.1236 22.9011C15.7382 23.1015 15.3528 23.1015 14.9673 22.9011L9.41699 19.779L19.477 9.64193L19.7468 9.56485C19.978 9.56485 20.1091 9.66506 20.1322 9.8732L21.7511 19.779ZM13.5412 9.79611L10.0337 15.6163L11.4984 6.40424C11.5215 6.1961 11.6525 6.09589 11.8838 6.09589C12.038 6.09589 12.1382 6.14214 12.1922 6.28861L13.8496 9.33358L13.5412 9.79611ZM17.0102 10.7674L9.64826 18.1602L15.2371 8.67833C15.3142 8.52416 15.4299 8.45478 15.584 8.45478C15.7382 8.45478 15.8384 8.52416 15.8924 8.67833L17.0102 10.7674Z"
@@ -238,8 +238,8 @@ export default function Carousel() {
 			</div>
 			<div>
 				<svg
-					width="31"
-					height="30"
+					width="80"
+					height="80"
 					viewBox="0 0 31 30"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"

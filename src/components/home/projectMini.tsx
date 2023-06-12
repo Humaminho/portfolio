@@ -10,7 +10,7 @@ export default function ProjectMini({
 	return (
 		<div className="flex flex-col items-center gap-2">
 			<Image
-				className="w-full"
+				className="w-full rounded-lg"
 				src={src}
 				height={5000}
 				width={5000}
@@ -28,9 +28,9 @@ export default function ProjectMini({
 					<path
 						d="M1 14L13.3652 1M13.3652 1V13.48M13.3652 1H1.49461"
 						stroke="currentColor"
-						stroke-width="1.38352"
-						stroke-linecap="round"
-						stroke-linejoin="round"
+						strokeWidth="1.38352"
+						strokeLinecap="round"
+						strokeLinejoin="round"
 					/>
 				</svg>
 			</div>

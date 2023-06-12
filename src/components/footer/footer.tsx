@@ -4,8 +4,8 @@ import FooterTitle from "./footerTitle";
 
 export default function Footer() {
 	return (
-		<footer className="bg-footer text-d-text">
-			<div className="flex flex-col gap-3 border-t border-d-text  px-7 py-10">
+		<footer className="bg-footer text-d-text md:grid md:grid-cols-2">
+			<div className="flex flex-col gap-3 border-t border-d-text  px-7 sm:px-10 md:px-7 lg:px-16 py-10 order-2 grow md:border-l">
 				<FooterTitle text="CONTACT ME" />
 				<form className="flex flex-col gap-4">
 					<input
@@ -41,7 +41,7 @@ export default function Footer() {
 					</svg>
 				</button>
 			</div>
-			<div className="flex flex-col border-t border-d-text  px-7 pt-10 pb-5">
+			<div className="flex flex-col border-t border-d-text  px-7  sm:px-10 md:px-7 lg:px-16 pt-10 pb-5 order-1 grow">
 				<FooterTitle text="LINKS" />
 				<nav className="flex flex-col gap-3 pb-6">
 					<Link href="/">HOME</Link>

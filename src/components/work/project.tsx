@@ -26,9 +26,9 @@ export default function Project({
 			></Image>
 			<div className="flex flex-col gap-2">
 				<h3 className="text-lg font-semibold">{title}</h3>
-				<p className="">{description}</p>
+				<p className="text-sm md:text-md">{description}</p>
 				<p>Features include:</p>
-				<ul className="pl-8">
+				<ul className="pl-8 text-sm md:text-md">
 					{features.map((feature) => {
 						return (
 							<li key={feature.slice(0, 5)} className="list-disc">

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Project from '@/components/home/project';
+import Project from '@/components/work/project';
 
 interface Project {
 	src: string;
