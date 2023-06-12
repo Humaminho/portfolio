@@ -1,16 +1,11 @@
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import Carousel from '@/components/home/carousel';
+import Link from 'next/link';
 import ProjectMini from '@/components/home/projectMini';
-
-const inter = Inter({
-	subsets: ['latin'],
-	variable: '--font-inter',
-});
+import ContactBtn from '@/components/home/contactBtn';
 
 export default function Home() {
 	return (
-		<main className="px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-14 lg:px-16">
+		<main className="px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16">
 			<section className="flex flex-col pt-24 items-start">
 				<h1 className="text-4xl font-black dark:font-white pb-1 sm:text-6xl md:text-7xl lg:text-8xl">
 					Hi I&apos;m Humam <br /> I&apos;m a web developer
@@ -18,9 +13,7 @@ export default function Home() {
 				<p className="text-sm md:text-base lg:text-lg font-light pb-4 md:pb-6 lg:pb-8">
 					Front end - React.js - Next.js
 				</p>
-				<button className="font-semibold px-5 pb-3 pt-[.6rem] border text-sm lg:text-lg border-l-text dark:border-d-text rounded-full">
-					Contact me
-				</button>
+				<ContactBtn />
 			</section>
 			<section className="flex items-end md:gap-10 lg:gap-24 xl:gap-32">
 				<div className="text-sm lg:text-base">
@@ -39,7 +32,12 @@ export default function Home() {
 						bring interactivity and dynamism to web applications.
 					</p>
 					<p className="leading-paragraph">
-						Interested? <b>Learn more about me!</b>
+						Interested?{' '}
+						<b>
+							<Link className="hover:text-d-emph" href="/about">
+								Learn more about me!
+							</Link>
+						</b>
 					</p>
 				</div>
 				<Image
@@ -78,8 +76,27 @@ export default function Home() {
 							ever-evolving field of web development.
 						</p>
 						<p className="pb-5 leading-paragraph">
-							Visit my <b>LinkedIn</b> or <b>Github</b> for more
-							details.
+							Visit my{' '}
+							<b>
+								<a
+									href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
+									target="_blank"
+									className="hover:text-d-emph"
+								>
+									LinkedIn
+								</a>
+							</b>{' '}
+							or{' '}
+							<b>
+								<a
+									href="https://github.com/humaminho"
+									target="_blank"
+									className="hover:text-d-emph"
+								>
+									Github
+								</a>
+							</b>{' '}
+							for more details.
 						</p>
 					</div>
 				</div>
@@ -88,7 +105,7 @@ export default function Home() {
 				<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xl">
 					LATEST WORK_
 				</h2>
-				<div className="flex flex-col gap-8 lg:flex-row lg:gap-24">
+				<div className="flex flex-col gap-8 sm:flex-row lg:gap-24">
 					<ProjectMini
 						src="/images/cozyshop-shot.png"
 						title="COZY SHOP"

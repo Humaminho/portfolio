@@ -14,23 +14,25 @@ module.exports = {
 			lineHeight: {
 				paragraph: '1.1rem',
 			},
-		},
-		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			black: '#000000',
-			white: '#FFFFFF',
-			//dark theme
-			'd-bg': '#0A0A0D',
-			'd-border': '#1E1E1E',
-			'd-text': '#ffffff',
-			//light theme
-			'l-bg': '#ECECEC',
-			'l-border': '#CACACA',
-			'l-text': '#0A0A0D',
-			footer: '#0E0B36',
-			'd-emph': '#5566FF',
-      'l-emph': '#220AB4'
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				black: '#000000',
+				white: '#FFFFFF',
+				//dark theme
+				'd-bg': '#0A0A0D',
+				'd-border': '#1E1E1E',
+				'd-text': '#ffffff',
+				//light theme
+				'l-bg': '#ECECEC',
+				'l-border': '#CACACA',
+				'l-text': '#0A0A0D',
+				footer: '#0E0B36',
+				'd-emph': '#5566FF',
+				'l-emph': '#220AB4',
+				'd-received': 'rgba(29, 149, 29, 0.739)',
+				'l-received': 'rgba(19, 137, 19, 0.9)',
+			},
 		},
 	},
 	plugins: [],

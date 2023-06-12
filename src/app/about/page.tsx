@@ -1,11 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
 	return (
-		<main className="px-7">
-			<section className="flex flex-col pt-24 items-start">
-				<div className="text-sm md:text-md pb-12">
-					<h2 className="text-2xl font-bold pb-8">GET TO KNOW ME_</h2>
+		<main className="px-7 sm:px-10 md:px-12 lg:px-16">
+			<section className="flex flex-col pt-24 items-start md:items-end md:flex-row md:pb-24 lg:pb-56 md:gap-10 lg:gap-32">
+				<div className="text-sm md:text-base pb-12 md:pb-0">
+					<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xltext-2xl">
+						GET TO KNOW ME_
+					</h2>
 					<p className="pb-4 leading-paragraph">
 						I embarked on a journey that led me from studying Human
 						Resources Management for four years to discovering my
@@ -30,15 +33,20 @@ export default function About() {
 						in this exciting field.
 					</p>
 					<p className="leading-paragraph">
-						Enough about me. <b>Check out my work!</b>
+						Enough about me.{' '}
+						<b>
+							<Link href="/work" className="hover:text-d-emph">
+								Check out my work!
+							</Link>
+						</b>
 					</p>
 				</div>
 				<Image
-					className="self-center"
+					className="self-center md:self-end w-72 lg:w-80 xl:w-96"
 					alt="Illustration"
 					src="/images/saly-2.png"
-					height={500}
-					width={500}
+					height={1000}
+					width={1000}
 				></Image>
 			</section>
 		</main>

@@ -54,7 +54,7 @@ export default function Work() {
 	];
 
 	return (
-		<main className="px-7">
+		<main className="px-7 sm:px-10 md:px-12 lg:px-16">
 			<section className="flex flex-col py-24 items-start">
 				<div className="">
 					<h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>
@@ -67,8 +67,8 @@ export default function Work() {
 									title={project.title}
 									description={project.description}
 									features={project.features}
-                  github={project.github}
-                  live={project.live}
+									github={project.github}
+									live={project.live}
 								/>
 							);
 						})}
