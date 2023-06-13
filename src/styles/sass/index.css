@@ -17,11 +17,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .menu-active {
   transform: translate(0);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   opacity: 1;
+}
+
+#home {
+  background-image: url("/svg/test-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+@media screen and (min-width: 480px) {
+  #home {
+    background-position-y: -5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #home {
+    background-size: 80%;
+    background-position-x: 20rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home {
+    background-size: 70%;
+    background-position-x: 30rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #home {
+    background-size: 60%;
+    background-position-x: 40rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #home {
+    background-size: 50%;
+    background-position: right top;
+    background-position-y: -10%;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -2,20 +2,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ProjectMini from '@/components/home/projectMini';
 import ContactBtn from '@/components/home/contactBtn';
+import '../styles/sass/index.css';
 
 export default function Home() {
 	return (
-		<main className="px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16">
-			<section className="flex flex-col pt-24 items-start">
-				<h1 className="text-4xl font-black dark:font-white pb-1 sm:text-6xl md:text-7xl lg:text-8xl">
-					Hi I&apos;m Humam <br /> I&apos;m a web developer
-				</h1>
-				<p className="text-sm md:text-base lg:text-lg font-light pb-4 md:pb-6 lg:pb-8">
-					Front end - React.js - Next.js
-				</p>
-				<ContactBtn />
+		<main
+			id="home"
+			className="px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16"
+		>
+			<section className="pt-24 flex items-center justify-start md:justify-around">
+				<div className="flex flex-col items-start">
+					<h1 className="text-4xl font-black dark:font-white pb-1 sm:text-5xl md:text-6xl lg:text-7xl">
+						Hi I&apos;m Humam <br /> I&apos;m a web developer
+					</h1>
+					<p className="text-sm md:text-base lg:text-lg font-light pb-4 md:pb-6 lg:pb-8">
+						Front end - React.js - Next.js
+					</p>
+					<ContactBtn />
+				</div>
+				<Image
+					className="hidden md:block w-64 lg:w-80 xl:w-96"
+					src="/images/cube.png"
+					alt="nothing"
+					width={400}
+					height={400}
+				></Image>
 			</section>
-			<section className="flex items-end md:gap-10 lg:gap-24 xl:gap-32">
+
+			<section className="flex items-center md:gap-10 lg:gap-24 xl:gap-32">
 				<div className="text-sm lg:text-base">
 					<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xl">
 						ABOUT ME_
@@ -42,17 +56,17 @@ export default function Home() {
 				</div>
 				<Image
 					className="hidden md:block w-72 lg:w-80 xl:w-96"
-					src="/images/desk.png"
+					src="/images/about-me.png"
 					alt="nothing"
 					width={1000}
 					height={1000}
 				></Image>
 			</section>
 			<section className="text-sm lg:text-base flex flex-col">
-				<div className="flex md:gap-10 lg:gap-32">
+				<div className="flex items-center md:gap-10 lg:gap-32">
 					<Image
 						className="hidden md:block w-72 lg:w-80 xl:w-96"
-						src="/images/tools.png"
+						src="/images/3d-skills.png"
 						alt="nothing"
 						width={1000}
 						height={1000}

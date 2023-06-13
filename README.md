@@ -42,7 +42,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add contact form feedback message
 - [ ] Add skill stack components
 - [ ] Add cursor effect
-- [ ] Style scroll bar and ::selection
+- [x] Style scroll bar and ::selection
 - [ ] make skills & tools infinite animation
 - [ ] Add contact form functionality
 - [ ] Add background images

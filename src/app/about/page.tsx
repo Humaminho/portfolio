@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import '../../styles/sass/index.css'
 
 export default function About() {
 	return (
-		<main className="px-7 sm:px-10 md:px-12 lg:px-16">
-			<section className="flex flex-col pt-24 items-start md:items-end md:flex-row md:pb-24 lg:pb-56 md:gap-10 lg:gap-32">
+		<main id="about" className="px-7 sm:px-10 md:px-12 lg:px-16">
+			<section className="flex flex-col pt-24 items-center md:items-end md:flex-row md:pb-24 lg:pb-56 md:gap-10 lg:gap-32">
 				<div className="text-sm md:text-base pb-12 md:pb-0">
 					<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xltext-2xl">
 						GET TO KNOW ME_
@@ -42,9 +43,9 @@ export default function About() {
 					</p>
 				</div>
 				<Image
-					className="self-center md:self-end w-72 lg:w-80 xl:w-96"
+					className="self-center w-72 lg:w-80 xl:w-96"
 					alt="Illustration"
-					src="/images/saly-2.png"
+					src="/images/about.png"
 					height={1000}
 					width={1000}
 				></Image>

@@ -3,6 +3,6 @@ export default function jumpTo(id: string) {
 	if (element) {
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
-  const targetInput = document.getElementById('contact-input')
+  const targetInput = document.getElementById('name')
   setTimeout(() => targetInput?.focus(), 800)
 }

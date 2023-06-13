@@ -4,7 +4,7 @@ import Menu from './menu';
 import Resume from './resume';
 export default function Header() {
 	return (
-		<header className="flex justify-between items-center px-7 sm:px-10 md:px-14 lg:px-16 py-2 border-l-border border-b dark:border-d-border sticky top-0 bg-l-bg dark:bg-d-bg z-100">
+		<header className="flex justify-between items-center px-7 sm:px-10 md:px-14 lg:px-16 py-2 border-l-border border-b dark:border-d-border sticky top-0 bg-l-bg dark:bg-d-bg z-9000">
 			<a href="http://localhost:3000/" className="text-3xl">
 				H_
 			</a>
