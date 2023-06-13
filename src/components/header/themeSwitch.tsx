@@ -3,31 +3,39 @@ import { useState, useEffect } from 'react';
 
 export default function ThemeSwitch() {
 	const [open, setOpen] = useState(false);
-	const [theme, setTheme] = useState('dark');
+	const [theme, setTheme] = useState(getThemeMemo());
 
-	function openThemeDropdown() {
-		const dropdown = document.getElementById('theme-dropdown');
-		dropdown?.classList.remove('hidden');
-		dropdown?.classList.add('block');
-		setOpen(true);
+  function getThemeMemo() {
+		const memo = localStorage?.getItem('theme');
+		if (memo) return memo;
+		else return 'dark';
 	}
 
-  function closeThemeDropdown() {
-    const dropdown = document.getElementById('theme-dropdown');
-    dropdown?.classList.remove('block');
-    dropdown?.classList.add('hidden');
-    setOpen(false);
-  }
+	function setThemeMemo(theme: string): void {
+		localStorage.setItem('theme', theme);
+	}
 
 	useEffect(() => {
 		const html = document.querySelector('html');
 		theme === 'dark'
 			? html?.classList.add(theme)
 			: html?.classList.remove('dark');
+		setThemeMemo(theme);
 	}, [theme]);
 
+	useEffect(() => {
+		const dropdown = document.getElementById('theme-dropdown');
+		if (open) {
+			dropdown?.classList.remove('hidden');
+			dropdown?.classList.add('block');
+		} else {
+			dropdown?.classList.remove('block');
+			dropdown?.classList.add('hidden');
+		}
+	}, [open]);
+
 	return (
-		<div className="border-l-text dark:border-d-text border rounded-full relative">
+		<div className="border-l-text dark:border-d-text border rounded-full relative theme-icon">
 			{theme === 'dark' ? (
 				<svg
 					width="25"
@@ -35,11 +43,9 @@ export default function ThemeSwitch() {
 					viewBox="0 0 15 15"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					className="p-1 cursor-pointer"
+					className="p-1 hover:cursor-pointer"
 					onClick={() => {
-						open === false
-							? openThemeDropdown()
-							: closeThemeDropdown();
+						open === false ? setOpen(true) : setOpen(false);
 					}}
 				>
 					<path
@@ -60,15 +66,17 @@ export default function ThemeSwitch() {
 					className="bi bi-brightness-high-fill p-[4px] hover:cursor-pointer"
 					viewBox="0 0 16 16"
 					onClick={() => {
-						open === false
-							? openThemeDropdown()
-							: closeThemeDropdown();
+						open === false ? setOpen(true) : setOpen(false);
 					}}
 				>
 					<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
 				</svg>
 			)}
-			<div id="theme-dropdown" className="absolute top-12 right-0 hidden">
+			<div
+				onMouseOut={() => {}}
+				id="theme-dropdown"
+				className="absolute top-12 right-0 hidden"
+			>
 				<ul className="border rounded-lg w-[8rem] border-l-border dark:border-d-border flex flex-col backdrop-blur-lg">
 					<button
 						onClick={() => {

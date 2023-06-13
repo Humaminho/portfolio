@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer
 			id="contact"
-			className="relative bg-footer text-d-text md:grid md:grid-cols-2"
+			className=" bg-footer text-d-text md:grid md:grid-cols-2 "
 		>
 			<div className="flex flex-col gap-3 border-t border-d-text  px-7 sm:px-10 md:px-7 lg:px-16 py-10 order-2 grow md:border-l">
 				<FooterTitle text="CONTACT ME" />

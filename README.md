@@ -34,3 +34,15 @@ I welcome any feedback or suggestions to improve this portfolio website. If you 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Tasks list
+
+- [ ] Fix transformed elements overlaping issue
+- [x] Add local storage to the theme switcher
+- [x] Add contact form feedback message
+- [ ] Add skill stack components
+- [ ] Add cursor effect
+- [ ] Style scroll bar and ::selection
+- [ ] make skills & tools infinite animation
+- [ ] Add contact form functionality
+- [ ] Add background images
