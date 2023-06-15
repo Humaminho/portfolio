@@ -17,8 +17,13 @@ export default function ProjectMini({
 				width={5000}
 				alt="Project image"
 			></Image>
-			<Link href="/work" className="group hover:text-d-emph flex gap-2 items-center">
-				<h3 className="text-lg sm:text-base lg:text-lg font-semibold">{title}</h3>
+			<Link
+				href="/work"
+				className="group hover:text-l-emph dark:hover:text-d-emph flex gap-2 items-center"
+			>
+				<h3 className="text-lg sm:text-base lg:text-lg font-semibold">
+					{title}
+				</h3>
 				<svg
 					width="15"
 					height="15"

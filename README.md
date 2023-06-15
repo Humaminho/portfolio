@@ -37,12 +37,22 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Tasks list
 
-- [ ] Fix transformed elements overlaping issue
 - [x] Add local storage to the theme switcher
 - [x] Add contact form feedback message
-- [ ] Add skill stack components
-- [ ] Add cursor effect
 - [x] Style scroll bar and ::selection
+- [ ] Add cursor effect
+- [ ] Fix transformed elements overlaping issue
+- [ ] Add skill stack components
+- [ ] Add loading screen
+- [ ] Add Logo and favicon
+- [ ] Add dark mode shadow
+- [ ] Fix backdrop blur issue
+- [ ] Navbar active link
+- [ ] Change footer link so that it scrolls to top instead of redirecting to the same page
+- [ ] Add scroll to top button
+- [ ] Add resume button
+- [ ] Fix about section layout
 - [ ] make skills & tools infinite animation
 - [ ] Add contact form functionality
 - [ ] Add background images
+- [ ] Add links

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import '../../styles/sass/index.css'
+import '../../styles/index.css'
 
 export default function About() {
 	return (
@@ -36,7 +36,10 @@ export default function About() {
 					<p className="leading-paragraph">
 						Enough about me.{' '}
 						<b>
-							<Link href="/work" className="hover:text-d-emph">
+							<Link
+								href="/work"
+								className="hover:text-l-emph dark:hover:text-d-emph"
+							>
 								Check out my work!
 							</Link>
 						</b>

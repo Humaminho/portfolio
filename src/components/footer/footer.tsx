@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import FooterTitle from './footerTitle';
 import Form from './Form';
+import FooterLink from './footerLink';
+import FooterAnchor from './footerAnchor';
 
 export default function Footer() {
 	return (
@@ -15,40 +17,22 @@ export default function Footer() {
 			</div>
 			<div className="flex flex-col border-t border-d-text  px-7  sm:px-10 md:px-7 lg:px-16 pt-10 pb-5 order-1 grow md:pb-10">
 				<FooterTitle text="LINKS" />
-				<nav className="flex flex-col items-start gap-3 pb-6">
-					<Link href="/" className="hover:text-d-emph">
-						HOME
-					</Link>
-					<Link href="/work" className="hover:text-d-emph">
-						WORK
-					</Link>
-					<Link href="/about" className="hover:text-d-emph">
-						ABOUT
-					</Link>
+				<nav className="flex flex-col items-start pb-6">
+					<FooterLink text="HOME" href="/" />
+					<FooterLink text="WORK" href="/work" />
+					<FooterLink text="ABOUT" href="/about" />
 				</nav>
 				<FooterTitle text="SOCIALS" />
-				<nav className="flex flex-col items-start gap-3 pb-6">
-					<a
-						target="_blank"
-						className="hover:text-d-emph"
-						href="https://github.com/humaminho"
-					>
-						LINKEDIN
-					</a>
-					<a
-						target="_blank"
-						className="hover:text-d-emph"
-						href="https://www.google.com"
-					>
-						EMAIL
-					</a>
-					<a
-						target="_blank"
-						className="hover:text-d-emph"
+				<nav className="flex flex-col items-start pb-6">
+					<FooterAnchor
+						text="LINKEDIN"
 						href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
-					>
-						GITHUB
-					</a>
+					/>
+					<FooterAnchor text="EMAIL" href="https://www.google.com" />
+					<FooterAnchor
+						text="GITHUB"
+						href="https://github.com/humaminho"
+					/>
 				</nav>
 				<p className="text-sm font-extralight self-center mt-auto">
 					© 2023 Humam. All Rights Reserved.

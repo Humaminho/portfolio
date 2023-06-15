@@ -1,35 +1,23 @@
 import Link from 'next/link';
 import ThemeSwitch from './themeSwitch';
+import HeaderLink from './headerLink';
 import Menu from './menu';
-import Resume from './resume';
 export default function Header() {
 	return (
-		<header className="flex justify-between items-center px-7 sm:px-10 md:px-14 lg:px-16 py-2 border-l-border border-b dark:border-d-border sticky top-0 bg-l-bg dark:bg-d-bg z-9000">
+		<header className="flex justify-between items-center px-7 sm:px-10 md:px-14 lg:px-16 py-2 border-l-border border-b dark:border-d-border sticky top-0 bg-l-header dark:bg-d-header z-100 backdrop-blur-md">
 			<a href="http://localhost:3000/" className="text-3xl">
 				H_
 			</a>
 			<nav className="hidden sm:block">
 				<ul className="flex gap-14 font-semibold">
 					<li>
-						<Link
-							className="text-sm hover:text-d-emph"
-							href="/work"
-						>
-							WORK
-						</Link>
+						<HeaderLink text="WORK" href="/work" />
 					</li>
 					<li>
-						<Link className="text-sm hover:text-d-emph" href="/">
-							HOME
-						</Link>
+						<HeaderLink text="HOME" href="/" />
 					</li>
 					<li>
-						<Link
-							className="text-sm hover:text-d-emph"
-							href="/about"
-						>
-							ABOUT
-						</Link>
+						<HeaderLink text="ABOUT" href="/about" />
 					</li>
 				</ul>
 			</nav>

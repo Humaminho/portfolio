@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Project from '@/components/work/project';
+import '../../styles/index.css';
 
 interface Project {
 	src: string;
@@ -54,7 +54,7 @@ export default function Work() {
 	];
 
 	return (
-		<main className="px-7 sm:px-10 md:px-12 lg:px-16">
+		<main id="work" className="px-7 sm:px-10 md:px-12 lg:px-16">
 			<section className="flex flex-col py-24 items-start">
 				<div className="">
 					<h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>

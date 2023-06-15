@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ProjectMini from '@/components/home/projectMini';
 import ContactBtn from '@/components/home/contactBtn';
-import '../styles/sass/index.css';
+import '../styles/index.css';
 
 export default function Home() {
 	return (
@@ -48,7 +48,10 @@ export default function Home() {
 					<p className="leading-paragraph">
 						Interested?{' '}
 						<b>
-							<Link className="hover:text-d-emph" href="/about">
+							<Link
+								className="hover:text-l-emph dark:hover:text-d-emph"
+								href="/about"
+							>
 								Learn more about me!
 							</Link>
 						</b>
@@ -95,7 +98,7 @@ export default function Home() {
 								<a
 									href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
 									target="_blank"
-									className="hover:text-d-emph"
+									className="hover:text-l-emph dark:hover:text-d-emph"
 								>
 									LinkedIn
 								</a>
@@ -105,7 +108,7 @@ export default function Home() {
 								<a
 									href="https://github.com/humaminho"
 									target="_blank"
-									className="hover:text-d-emph"
+									className="hover:text-l-emph dark:hover:text-d-emph"
 								>
 									Github
 								</a>

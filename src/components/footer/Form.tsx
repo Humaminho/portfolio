@@ -64,9 +64,21 @@ export default function Form() {
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph resize-none"
 			></textarea>
 			<button
+				onMouseOver={(e) => {
+					const cursor = document.querySelector('.cursor');
+					if (cursor) {
+						cursor.setAttribute('id', 'hover');
+					}
+				}}
+				onMouseLeave={(e) => {
+					const cursor = document.querySelector('.cursor');
+					if (cursor) {
+						cursor.removeAttribute('id');
+					}
+				}}
 				type="submit"
-        disabled={loading}
-				className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:text-l-border disabled:cursor-not-allowed disabled:opacity-50"
+				disabled={loading}
+				className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:text-l-border disabled:opacity-50"
 			>
 				<p className="">SEND</p>
 				<svg
