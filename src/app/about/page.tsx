@@ -5,7 +5,7 @@ import '../../styles/index.css'
 export default function About() {
 	return (
 		<main id="about" className="px-7 sm:px-10 md:px-12 lg:px-16">
-			<section className="flex flex-col pt-24 items-center md:items-end md:flex-row md:pb-24 lg:pb-56 md:gap-10 lg:gap-32">
+			<section className="flex flex-col pt-24 items-center md:items-end md:flex-row  pb-24 lg:pb-56 md:gap-8 lg:gap-24">
 				<div className="text-sm md:text-base pb-12 md:pb-0">
 					<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xltext-2xl">
 						GET TO KNOW ME_
@@ -46,7 +46,7 @@ export default function About() {
 					</p>
 				</div>
 				<Image
-					className="self-center w-72 lg:w-80 xl:w-96"
+					className="hidden md:block md:w-64   self-center lg:w-72 xl:w-80 xl:mr-10"
 					alt="Illustration"
 					src="/images/about.png"
 					height={1000}

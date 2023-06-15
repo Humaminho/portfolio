@@ -147,7 +147,7 @@ export default function ThemeSwitch() {
 						Light
 					</button>
 					<button
-						className="pl-3 py-2 border-d-border text-start text-d-border dark:text-white"
+						className="pl-3 py-2 border-d-border text-start text-l-border dark:text-d-border"
 						onMouseOver={(e) => {
 							const cursor = document.querySelector('.cursor');
 							if (cursor) {

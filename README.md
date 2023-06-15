@@ -1,12 +1,12 @@
 # Portfolio
 
 Welcome to my portfolio website.
-The website is built with Next.js, Typescript, styled using Tailwind CSS, and Sass, designed in [Figma](https://www.figma.com/files/recent?fuid=1157737933861458047) and hosted on [Vercel](https://vercel.com/) to showcase my projects and demonstrate my front-end web development skills.
+The website is built with Next.js, Typescript, styled using Tailwind CSS, and Sass, designed in [Figma](https://www.figma.com/) and hosted on [Vercel](https://vercel.com/) to showcase my projects and demonstrate my front-end web development skills.
 
 ## Links
 
 [Click here](https://www.figma.com/file/dTGdUl8zxrc29iq4PbPl4E/Humam's-portfolio?type=design&node-id=0%3A1&t=7YxanZkBwHnkcBNk-1) To check the design in Figma.
-Or [here](https://humams-portfolio.vercel.app) To check the live demo.
+Or [here](https://portfolio-humaminho.vercel.app/) To check the live demo.
 
 ## Installation
 > To run this project locally, follow these steps:
@@ -40,6 +40,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add local storage to the theme switcher
 - [x] Add contact form feedback message
 - [x] Style scroll bar and ::selection
+- [x] Add background images
 - [ ] Add cursor effect
 - [ ] Fix transformed elements overlaping issue
 - [ ] Add skill stack components
@@ -54,5 +55,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ ] Fix about section layout
 - [ ] make skills & tools infinite animation
 - [ ] Add contact form functionality
-- [ ] Add background images
 - [ ] Add links
