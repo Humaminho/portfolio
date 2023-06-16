@@ -1,6 +1,6 @@
 'use client';
 import '../../styles/index.css';
-import MenuLink from './menuLink';
+import MenuLink from './menu-link';
 
 export default function Menu() {
 	function closeMenu(): void {

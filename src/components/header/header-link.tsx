@@ -12,13 +12,13 @@ export default function HeaderLink({
 }) {
 
 	const path = usePathname();
-	console.log(path);
 
 	return (
 		<Link
-			className={`px-7 text-sm hover:text-l-emph dark:hover:text-d-emph ${
-				path === href &&
-				'text-[18px] text-black dark:text-white font-bold leading-5'
+			className={`px-7 hover:text-l-emph dark:hover:text-d-emph ${
+				path == href
+					? 'text-[18px] text-black dark:text-white font-bold leading-5'
+					: 'text-sm'
 			}`}
 			href={href}
 			onMouseOver={expandCursor}

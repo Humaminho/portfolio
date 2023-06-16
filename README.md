@@ -44,7 +44,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add cursor effect
 - [x] Fix backdrop blur issue
 - [x] Fix transformed elements overlaping issue
-- [ ] Add transition between pages, and  On scroll animations
+- [x] Add transition between pages
 - [ ] make skills & tools infinite animation
 - [ ] Fix custom cursor in mobile
 - [ ] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page

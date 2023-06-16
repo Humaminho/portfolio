@@ -1,7 +1,7 @@
-import FooterTitle from './footerTitle';
-import Form from './Form';
-import FooterLink from './footerLink';
-import FooterAnchor from './footerAnchor';
+import FooterTitle from './footer-title';
+import Form from './form';
+import FooterLink from './footer-link';
+import FooterAnchor from './footer-anchor';
 
 export default function Footer() {
 	return (

@@ -1,21 +1,15 @@
 'use client';
 import { useState } from 'react';
-import ThemeSwitch from './themeSwitch';
-import ThemeDropdown from './themeDropdown';
-import HeaderLink from './headerLink';
+import ThemeSwitch from './theme-switch';
+import ThemeDropdown from './theme-dropdown';
+import HeaderLink from './header-link';
 import Menu from './menu';
 import Logo from './logo';
-import MenuBtn from './menuBtn';
-import { usePathname } from 'next/navigation';
+import MenuBtn from './menu-btn';
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
 	const [theme, setTheme] = useState('dark');
-
-	const path = usePathname();
-  console.log(path)
-
-	
 
 	return (
 		<>

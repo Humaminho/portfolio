@@ -1,5 +1,6 @@
 import Project from '@/components/work/project';
 import '../../styles/index.css';
+import PageWrapper from '@/components/common/page-wrapper';
 
 interface Project {
 	src: string;
@@ -54,27 +55,29 @@ export default function Work() {
 	];
 
 	return (
-		<main id="work" className="px-7 sm:px-10 md:px-12 lg:px-16">
-			<section className="flex flex-col py-24 items-start">
-				<div className="">
-					<h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>
-					<div className="flex flex-col gap-16">
-						{projects.map((project) => {
-							return (
-								<Project
-									key={project.title}
-									src={project.src}
-									title={project.title}
-									description={project.description}
-									features={project.features}
-									github={project.github}
-									live={project.live}
-								/>
-							);
-						})}
-					</div>
-				</div>
-			</section>
-		</main>
+		<PageWrapper>
+      <main id="work" className="px-7 sm:px-10 md:px-12 lg:px-16">
+        <section className="flex flex-col py-24 items-start">
+          <div className="">
+            <h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>
+            <div className="flex flex-col gap-16">
+              {projects.map((project) => {
+                return (
+                  <Project
+                    key={project.title}
+                    src={project.src}
+                    title={project.title}
+                    description={project.description}
+                    features={project.features}
+                    github={project.github}
+                    live={project.live}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      </main>
+    </PageWrapper>
 	);
 }
