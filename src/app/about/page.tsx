@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import '../../styles/index.css'
+import '../../styles/index.css';
+import TextLink from '@/components/common/textLink';
 
 export default function About() {
 	return (
@@ -35,14 +36,7 @@ export default function About() {
 					</p>
 					<p className="leading-paragraph">
 						Enough about me.{' '}
-						<b>
-							<Link
-								href="/work"
-								className="hover:text-l-emph dark:hover:text-d-emph"
-							>
-								Check out my work!
-							</Link>
-						</b>
+						<TextLink href="/work" text="Check out my work!" />
 					</p>
 				</div>
 				<Image

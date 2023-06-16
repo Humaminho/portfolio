@@ -1,4 +1,6 @@
+'use client';
 import Image from 'next/image';
+import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
 export default function Project({
 	src,
@@ -40,15 +42,19 @@ export default function Project({
 				<div className="flex gap-5 items-center pt-3">
 					<a
 						href={live}
-						target="blank"
+						target="_blank"
 						className="shadow-md hover:shadow-lg font-semibold px-6 pb-3 pt-[.6rem] border border-l-text dark:border-d-text rounded-full dark:hover:border-d-emph dark:hover:text-d-emph hover:border-l-emph hover:text-l-emph"
+						onMouseOver={expandCursor}
+						onMouseLeave={shrinkCursor}
 					>
 						Live demo
 					</a>
 					<a
 						href={github}
-						target="blank"
+						target="_blank"
 						className="font-semibold hover:text-l-emph dark:hover:text-d-emph"
+						onMouseOver={expandCursor}
+						onMouseLeave={shrinkCursor}
 					>
 						Github
 					</a>

@@ -1,16 +1,15 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
-export default function ThemeSwitch() {
-	const [open, setOpen] = useState(false);
-	
-  const [theme, setTheme] = useState('dark');
+export default function ThemeSwitch({setTheme, theme, open, setOpen}: {setTheme: Function, theme: string, open: boolean, setOpen: Function}) {
 
   useEffect(() => {
 		const memo = localStorage?.getItem('theme');
 		if (memo) {
 			setTheme(memo);
 		}
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 	function setThemeMemo(theme: string): void {
@@ -50,18 +49,8 @@ export default function ThemeSwitch() {
 						onClick={() => {
 							open === false ? setOpen(true) : setOpen(false);
 						}}
-						onMouseOver={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.setAttribute('id', 'hover');
-							}
-						}}
-						onMouseLeave={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.removeAttribute('id');
-							}
-						}}
+						onMouseOver={expandCursor}
+						onMouseLeave={shrinkCursor}
 					>
 						<path
 							d="M13.0987 9.57813C13.2262 9.27438 12.8619 9.01563 12.5562 9.15063C11.9454 9.41879 11.2853 9.55672 10.6181 9.55563C8.0025 9.55563 5.8825 7.47813 5.8825 4.91501C5.88154 4.0496 6.12741 3.20186 6.59125 2.47126C6.76875 2.19126 6.55562 1.80376 6.23062 1.88626C3.725 2.52563 1.875 4.75813 1.875 7.41376C1.875 10.5681 4.48437 13.125 7.70375 13.125C10.1412 13.125 12.2287 11.6594 13.0987 9.57813Z"
@@ -83,88 +72,14 @@ export default function ThemeSwitch() {
 						onClick={() => {
 							open === false ? setOpen(true) : setOpen(false);
 						}}
-						onMouseOver={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.setAttribute('id', 'hover');
-							}
-						}}
-						onMouseLeave={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.removeAttribute('id');
-							}
-						}}
+						onMouseOver={expandCursor}
+						onMouseLeave={shrinkCursor}
 					>
 						<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
 					</svg>
 				)}
 			</div>
-			<div
-				onMouseOut={() => {}}
-				id="theme-dropdown"
-				className="fixed top-16 right-0 hidden mr-7 sm:mr-10 md:mr-14 lg:mr-16"
-			>
-				<ul className="font-semibold border rounded-lg w-[8rem] border-l-border dark:border-d-border flex flex-col bg-l-header dark:bg-d-header z-100 backdrop-blur-md">
-					<button
-						className="pl-3 py-2 border-b border-l-border dark:border-d-border text-start hover:text-d-emph"
-						onClick={() => {
-							setTheme('dark');
-						}}
-						onMouseOver={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.setAttribute('id', 'hover');
-							}
-						}}
-						onMouseLeave={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.removeAttribute('id');
-							}
-						}}
-					>
-						Dark
-					</button>
-					<button
-						className="pl-3 py-2 border-b border-l-border dark:border-d-border text-start hover:text-d-emph"
-						onClick={() => {
-							setTheme('light');
-						}}
-						onMouseOver={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.setAttribute('id', 'hover');
-							}
-						}}
-						onMouseLeave={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.removeAttribute('id');
-							}
-						}}
-					>
-						Light
-					</button>
-					<button
-						className="pl-3 py-2 border-d-border text-start text-l-border dark:text-d-border"
-						onMouseOver={(e) => {
-							const cursor = document.querySelector('.cursor');
-							if (cursor) {
-								cursor.setAttribute('id', 'hover-2');
-							}
-						}}
-						onMouseLeave={(e) => {
-							const cursor = document.querySelector('.cursor')
-							if (cursor) {
-								cursor.removeAttribute('id');
-							}
-						}}
-					>
-						Random
-					</button>
-				</ul>
-			</div>
+			
 		</>
 	);
 }

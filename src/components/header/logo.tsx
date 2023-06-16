@@ -1,16 +1,15 @@
 'use client';
 import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
-export default function FooterAnchor({text, href}: {text: string, href: string}) {
+export default function Logo() {
   return (
 		<a
-			target="_blank"
-			className="hover:text-d-emph py-2"
-			href={href}
+			href="http://localhost:3000/"
+			className="text-3xl"
 			onMouseOver={expandCursor}
 			onMouseLeave={shrinkCursor}
 		>
-			{text}
+			H_
 		</a>
   );
 }

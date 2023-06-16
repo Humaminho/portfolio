@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { expandCursor, shrinkCursor, typeCursor } from '@/utils/cursorActions';
 
 export default function Form() {
 
@@ -42,6 +43,8 @@ export default function Form() {
 				maxLength={50}
 				id="name"
 				required
+				onMouseOver={typeCursor}
+				onMouseLeave={shrinkCursor}
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph"
 			/>
 			<input
@@ -51,6 +54,8 @@ export default function Form() {
 				minLength={5}
 				maxLength={50}
 				id="email"
+				onMouseOver={typeCursor}
+				onMouseLeave={shrinkCursor}
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph"
 			/>
 			<textarea
@@ -61,21 +66,13 @@ export default function Form() {
 				minLength={10}
 				maxLength={1000}
 				id="message"
+				onMouseOver={typeCursor}
+				onMouseLeave={shrinkCursor}
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph resize-none"
 			></textarea>
 			<button
-				onMouseOver={(e) => {
-					const cursor = document.querySelector('.cursor');
-					if (cursor) {
-						cursor.setAttribute('id', 'hover');
-					}
-				}}
-				onMouseLeave={(e) => {
-					const cursor = document.querySelector('.cursor');
-					if (cursor) {
-						cursor.removeAttribute('id');
-					}
-				}}
+				onMouseOver={expandCursor}
+				onMouseLeave={shrinkCursor}
 				type="submit"
 				disabled={loading}
 				className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:text-l-border disabled:opacity-50"

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import ProjectMini from '@/components/home/projectMini';
 import ContactBtn from '@/components/home/contactBtn';
 import '../styles/index.css';
+import TextAnchor from '@/components/common/textAnchor';
+import TextLink from '@/components/common/textLink';
 
 export default function Home() {
 	return (
@@ -47,14 +49,7 @@ export default function Home() {
 					</p>
 					<p className="leading-paragraph">
 						Interested?{' '}
-						<b>
-							<Link
-								className="hover:text-l-emph dark:hover:text-d-emph"
-								href="/about"
-							>
-								Learn more about me!
-							</Link>
-						</b>
+						<TextLink text="Learn more about me!" href="/about" />
 					</p>
 				</div>
 				<Image
@@ -94,25 +89,12 @@ export default function Home() {
 						</p>
 						<p className="pb-5 leading-paragraph">
 							Visit my{' '}
-							<b>
-								<a
-									href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
-									target="_blank"
-									className="hover:text-l-emph dark:hover:text-d-emph"
-								>
-									LinkedIn
-								</a>
-							</b>{' '}
+							<TextAnchor
+								text="Linkedin"
+								href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
+							/>{' '}
 							or{' '}
-							<b>
-								<a
-									href="https://github.com/humaminho"
-									target="_blank"
-									className="hover:text-l-emph dark:hover:text-d-emph"
-								>
-									Github
-								</a>
-							</b>{' '}
+							<TextAnchor href="https://github.com/humaminho" text="Github" />{' '}
 							for more details.
 						</p>
 					</div>

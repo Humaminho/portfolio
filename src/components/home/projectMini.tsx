@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
 export default function ProjectMini({
 	src,
@@ -20,6 +22,8 @@ export default function ProjectMini({
 			<Link
 				href="/work"
 				className="group hover:text-l-emph dark:hover:text-d-emph flex gap-2 items-center"
+				onMouseOver={expandCursor}
+				onMouseLeave={shrinkCursor}
 			>
 				<h3 className="text-lg sm:text-base lg:text-lg font-semibold">
 					{title}
