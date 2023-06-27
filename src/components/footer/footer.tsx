@@ -2,6 +2,7 @@ import FooterTitle from './footer-title';
 import Form from './form';
 import FooterLink from './footer-link';
 import FooterAnchor from './footer-anchor';
+import FeedbackMsg from './feedback-msg';
 
 export default function Footer() {
 	return (

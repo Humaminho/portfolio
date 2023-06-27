@@ -1,42 +1,53 @@
 'use client';
 import { useState } from 'react';
 import { expandCursor, shrinkCursor, typeCursor } from '@/utils/cursorActions';
+import axios from 'axios';
 
 export default function Form() {
+	const [loading, setLoading] = useState(false);
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
 
-  const [loading, setLoading] = useState(false);
+	function displaySuccess() {}
+	function displayFailure() {}
 
 	async function handleSubmit(e: any) {
 		e.preventDefault();
-    setLoading(true);
+		setLoading(true);
 
 		const data = {
-			name: e.target.name.value,
-			email: e.target.email.value,
-			message: e.target.message.value,
+			name,
+			email,
+			message,
 		};
 
-		const res = await fetch('/api/contact', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		});
-
-		if (res.ok) {
-			console.log('Client: Success');
-      setLoading(false);
-		}
-		if (!res.ok) {
-			console.log('Client: Error');
-      setLoading(false);
+		try {
+			axios({
+				method: 'POST',
+				url: 'https://eo8s65vdqposqb1.m.pipedream.net',
+				data,
+			}).then((res) => {
+				console.log(`SUCCESS:
+          ${res}`);
+				setName('');
+				setEmail('');
+				setMessage('');
+				displaySuccess();
+				displayFailure();
+				setLoading(false);
+			});
+		} catch (error) {
+			console.log(error);
+			setLoading(false);
 		}
 	}
 
 	return (
 		<form onSubmit={handleSubmit} className="flex flex-col gap-4">
 			<input
+				value={name}
+				onChange={(e) => setName(e.target.value)}
 				type="text"
 				placeholder="Name"
 				minLength={3}
@@ -48,6 +59,8 @@ export default function Form() {
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph"
 			/>
 			<input
+				value={email}
+				onChange={(e) => setEmail(e.target.value)}
 				type="email"
 				placeholder="Email"
 				required
@@ -59,6 +72,8 @@ export default function Form() {
 				className="w-full bg-transparent border border-d-text py-4 px-6 rounded-md font-light outline-0 focus:border-d-emph"
 			/>
 			<textarea
+				value={message}
+				onChange={(e) => setMessage(e.target.value)}
 				placeholder="Message"
 				cols={30}
 				rows={5}
@@ -73,6 +88,7 @@ export default function Form() {
 			<button
 				onMouseOver={expandCursor}
 				onMouseLeave={shrinkCursor}
+				onClick={handleSubmit}
 				type="submit"
 				disabled={loading}
 				className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:text-l-border disabled:opacity-50"

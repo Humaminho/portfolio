@@ -1,6 +1,6 @@
 export default function FeedbackMsg() {
   return (
-		<div className="border-white px-5 py-3 text-white  bg-l-received dark:bg-d-received border rounded-lg absolute -top-10 right-1/2 flex items-center gap-4 animate-bounce">
+		<div className="border-white px-5 py-3 text-white bg-l-received dark:bg-d-received border rounded-lg fixed bottom-10 right-1/2 scale-2 flex items-center gap-4 animate-pulse">
 			<p className="font-semibold">Well received</p>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
