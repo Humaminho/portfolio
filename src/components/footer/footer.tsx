@@ -1,8 +1,9 @@
 import FooterTitle from './footer-title';
-import Form from './form';
+import Form from './contact-form';
 import FooterLink from './footer-link';
 import FooterAnchor from './footer-anchor';
-import FeedbackMsg from './feedback-msg';
+import SuccessMsg from './success-msg';
+import FaillureMsg from './faillure-msg';
 
 export default function Footer() {
 	return (
@@ -37,6 +38,8 @@ export default function Footer() {
 					© 2023 Humam. All Rights Reserved.
 				</p>
 			</div>
+			<SuccessMsg />
+			<FaillureMsg />
 		</footer>
 	);
 }

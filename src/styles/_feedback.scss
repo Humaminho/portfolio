@@ -1,0 +1,27 @@
+.invisible {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.off {
+  display: none;
+}
+
+.faillure-msg, .success-msg {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 50%;
+  translate: 50% 0;
+  padding: .75rem 1.25rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // background-color: rgba(190, 22, 22, 0.739);
+  // background-color: rgba(216, 57, 57, 0.9);
+}

@@ -40,20 +40,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add local storage to the theme switcher
 - [x] Add contact form feedback message
 - [x] Style scroll bar and ::selection
-- [ ] Change background image
-- [x] Add cursor effect
+- [x] Add custom cursor
 - [x] Fix backdrop blur issue
 - [x] Fix transformed elements overlaping issue
 - [x] Add transition between pages
-- [ ] make skills & tools infinite animation
-- [ ] Fix custom cursor in mobile
-- [ ] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
+- [x] Fix custom cursor in mobile
 - [x] Nav: Navbar active link
-- [ ] Add scroll to top button
+- [x] Add contact form functionality (later)
+
+- [x] Form validation and feedback message
+- [ ] make skills & tools infinite animation
+- [ ] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
 - [ ] Add resume button
-- [ ] Add contact form functionality (later)
-- [ ] Add loading screen
-- [ ] Add Logo and favicon
+- [ ] Fix light theme flickering
 - [ ] Add skill stack components
+- [ ] Add loading screen
+- [ ] Change background (noise)
+- [ ] Add Logo and favicon
 - [ ] Fix about section layout, mini projects hover effect and dark mode shadow
+- [ ] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
 - [ ] Add urls to the links
+
