@@ -16,6 +16,7 @@ export default function TextLink({
 				className="hover:text-l-emph dark:hover:text-d-emph"
 				onMouseOver={expandCursor}
 				onMouseLeave={shrinkCursor}
+				onClick={shrinkCursor}
 			>
 				{text}
 			</Link>

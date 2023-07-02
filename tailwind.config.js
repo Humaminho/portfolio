@@ -36,6 +36,7 @@ module.exports = {
 				'l-faillure': 'rgba(216, 57, 57, 0.9)',
 				'l-header': 'rgba(246, 246, 246, 0.7)',
 				'd-header': 'rgba(10, 10, 13, 0.7)',
+        'white-shadow': '0px 0px 5px #fff',
 			},
 		},
 	},

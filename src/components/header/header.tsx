@@ -6,6 +6,7 @@ import HeaderLink from './header-link';
 import Menu from './menu';
 import Logo from './logo';
 import MenuBtn from './menu-btn';
+import Resume from './resume';
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
@@ -28,7 +29,8 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
-				<div className="text-l-text dark:text-d-text flex gap-5 items-center">
+				<div className="text-l-text dark:text-d-text flex gap-5 md:gap-6 lg:gap-7 items-center">
+          <Resume />
 					<ThemeSwitch
 						theme={theme}
 						setTheme={setTheme}

@@ -49,8 +49,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add contact form functionality (later)
 
 - [x] Form validation and feedback message
-- [ ] make skills & tools infinite animation
-- [ ] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
+- [x] make skills & tools infinite animation
+- [x] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
 - [ ] Add resume button
 - [ ] Fix light theme flickering
 - [ ] Add skill stack components

@@ -1,16 +1,22 @@
+import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
+
 export default function Resume() {
-  return (
-		<div className="border-l-text dark:border-d-text border-2 rounded-full sticky bottom-10 self-end right-7 sm:right-10  md:right-14 lg:right-16 hover:text-d-emph hover:border-d-emph dark:hover:border-d-emph">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="50"
-				height="50"
-				fill="currentColor"
-				className="bi bi-file-earmark-person-fill p-3 hover:p-2"
-				viewBox="0 0 16 16"
-			>
-				<path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
-			</svg>
-		</div>
-  );
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="25"
+			height="25"
+			fill="currentColor"
+			className="bi bi-person-circle  hover:text-l-emph dark:hover:text-d-emph"
+			viewBox="0 0 16 16"
+			onMouseOver={expandCursor}
+			onMouseOut={shrinkCursor}
+		>
+			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+			<path
+				fillRule="evenodd"
+				d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+			/>
+		</svg>
+	);
 }

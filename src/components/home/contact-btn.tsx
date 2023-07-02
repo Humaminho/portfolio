@@ -8,6 +8,8 @@ export default function ContactBtn() {
 		<button
 			onClick={() => {
 				jumpTo('contact');
+				const targetInput = document.getElementById('name');
+				setTimeout(() => targetInput?.focus(), 800);
 			}}
 			onMouseOver={expandCursor}
 			onMouseLeave={shrinkCursor}
