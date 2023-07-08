@@ -1,32 +1,49 @@
 'use client';
 import { expandCursor, shrinkCursor, typeCursor } from '@/utils/cursorActions';
 import axios from 'axios';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
+import { useState } from 'react';
 import * as Yup from 'yup';
 
 export default function ContactForm() {
+
+  const [sending, setSending] = useState(false);
+
 	function displaySuccess() {
-    const msg = document.querySelector('.success-msg');
-    msg?.classList.remove('off');
-    msg?.classList.remove('invisible');
-    setTimeout(() => {
-      msg?.classList.add('invisible');
-      setTimeout(() => {
-        msg?.classList.add('off')
-      }, 500);
-    }
-    , 3000);
+		const msg = document.querySelector('.success-msg');
+		msg?.classList.remove('off');
+		msg?.classList.remove('invisible');
+		setTimeout(() => {
+			msg?.classList.add('invisible');
+			setTimeout(() => {
+				msg?.classList.add('off');
+			}, 500);
+		}, 3000);
+	}
 
-  }
-	function displayFailure() {}
+	function displayFaillure() {
+		const msg = document.querySelector('.faillure-msg');
+		msg?.classList.remove('off');
+		msg?.classList.remove('invisible');
+		setTimeout(() => {
+			msg?.classList.add('invisible');
+			setTimeout(() => {
+				msg?.classList.add('off');
+			}, 500);
+		}, 3000);
+	}
 
-	async function onSubmit(values: { name: string; email: string; message: string}, { setSubmitting, resetForm }: any) {
+	async function onSubmit(
+		values: { name: string; email: string; message: string },
+		{ setSubmitting, resetForm }: any
+	) {
 		const data = {
-      name: values.name,
-      email: values.email,
-      message: values.message,
-    }
+			name: values.name,
+			email: values.email,
+			message: values.message,
+		};
 
+    setSending(true);
 
 		try {
 			axios({
@@ -37,14 +54,13 @@ export default function ContactForm() {
 				console.log(`SUCCESS:
           ${res}`);
 				displaySuccess();
-				setSubmitting(false);
-        resetForm();
+				setSending(false);
+				resetForm();
 			});
 		} catch (error) {
 			console.log(error);
-			setSubmitting(false);
-			displayFailure();
-      resetForm();
+			setSending(false);
+			displayFaillure();
 		}
 	}
 
@@ -101,8 +117,8 @@ export default function ContactForm() {
 						onMouseOver={expandCursor}
 						onMouseLeave={shrinkCursor}
 						type="submit"
-						disabled={isSubmitting}
-						className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:text-l-border disabled:opacity-50"
+						disabled={sending}
+						className="self-end flex gap-3 items-center hover:animate-pulse group hover:text-d-emph disabled:opacity-50"
 					>
 						<p>SEND</p>
 						<svg

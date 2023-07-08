@@ -17,8 +17,7 @@ export default function HeaderLink({
 	function handleClick(e: any) {
 		if (href === path) {
 			e.preventDefault();
-			jumpTo(text);
-			console.log('working ');
+			jumpTo('body');
 		} else return;
 	}
 

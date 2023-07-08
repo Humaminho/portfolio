@@ -1,0 +1,23 @@
+.icons {
+  display: flex;
+}
+.icon-slide {
+	display: flex;
+  animation: 15s slide infinite linear;
+}
+.icon-slide svg {
+  
+}
+.icon-slide svg:hover {
+  scale: .9;
+  color: #5566FF;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}

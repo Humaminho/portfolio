@@ -11,20 +11,21 @@ export default function ProjectMini({
 	title: string;
 }) {
 	return (
-		<div className="flex flex-col items-center gap-2">
+		<Link
+			href="/work"
+      onClick={shrinkCursor}
+			onMouseOver={expandCursor}
+			onMouseLeave={shrinkCursor}
+			className="group flex flex-col items-center gap-6"
+		>
 			<Image
-				className="w-full rounded-lg"
+				className="w-full rounded-lg group-hover:scale-95 group-hover:rounded-xl"
 				src={src}
 				height={5000}
 				width={5000}
 				alt="Project image"
 			></Image>
-			<Link
-				href="/work"
-				className="group hover:text-l-emph dark:hover:text-d-emph flex gap-2 items-center"
-				onMouseOver={expandCursor}
-				onMouseLeave={shrinkCursor}
-			>
+			<div className="group-hover:text-l-emph dark:group-hover:text-d-emph flex gap-3 items-center">
 				<h3 className="text-lg sm:text-base lg:text-lg font-semibold">
 					{title}
 				</h3>
@@ -44,7 +45,7 @@ export default function ProjectMini({
 						strokeLinejoin="round"
 					/>
 				</svg>
-			</Link>
-		</div>
+			</div>
+		</Link>
 	);
 }

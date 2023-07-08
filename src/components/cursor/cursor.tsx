@@ -23,7 +23,7 @@ export default function Cursor() {
 
 	return (
 		<div
-			className="cursor bg-l-emph dark:bg-d-emph border-l-emph dark:border-d-emph flex items-center justify-center text-l-emph dark:text-d-emph font-bold"
+			className="cursor hidden md:flex bg-l-emph dark:bg-d-emph border-l-emph dark:border-d-emph items-center justify-center text-l-emph dark:text-d-emph font-bold"
 			style={{
 				left: cursorX,
 				top: cursorY,

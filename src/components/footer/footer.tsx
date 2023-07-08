@@ -4,6 +4,7 @@ import FooterLink from './footer-link';
 import FooterAnchor from './footer-anchor';
 import SuccessMsg from './success-msg';
 import FaillureMsg from './faillure-msg';
+import GmailLink from './gmail-link';
 
 export default function Footer() {
 	return (
@@ -24,11 +25,11 @@ export default function Footer() {
 				</nav>
 				<FooterTitle text="SOCIALS" />
 				<nav className="flex flex-col items-start pb-6">
+          <GmailLink />
 					<FooterAnchor
 						text="LINKEDIN"
 						href="https://www.linkedin.com/in/houmame-kharbouch-2b0190244/"
 					/>
-					<FooterAnchor text="EMAIL" href="https://www.google.com" />
 					<FooterAnchor
 						text="GITHUB"
 						href="https://github.com/humaminho"

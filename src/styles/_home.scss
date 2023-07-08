@@ -1,6 +1,18 @@
-body {
-	background-image: url('/images/background3.png');
+#home {
+	background-image: url('/images/test34.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: top;
+}
+#about, #work {
+  background-image: url('/images/test34.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+}
+
+@media only screen and (min-width: 768px) {
+  #home {
+    background-image: url('/images/test35.png');
+  }
 }

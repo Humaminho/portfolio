@@ -9,3 +9,10 @@
 .menu-active {
 	@include slider-active;
 }
+
+.menu {
+	background-image: url('/images/menu-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}

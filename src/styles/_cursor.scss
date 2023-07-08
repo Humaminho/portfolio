@@ -6,7 +6,7 @@
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
-	z-index: 150;
+	z-index: 100;
 	transition: transform 300ms, width 300ms, border-radius 300ms, height 300ms, top 100ms, left 100ms;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }

@@ -2,7 +2,7 @@ import '../../styles/index.css';
 
 export default function SuccessMsg() {
 	return (
-		<div className="success-msg off invisible bg-l-faillure dark:bg-d-faillure">
+		<div className="faillure-msg off invisible bg-l-faillure dark:bg-d-faillure">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="18"

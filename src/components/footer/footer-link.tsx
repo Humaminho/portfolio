@@ -11,8 +11,7 @@ export default function FooterLink({text, href}: {text: string, href: string}) {
   function handleClick(e: any) {
     if (href === path) {
       e.preventDefault();
-      jumpTo(text);
-      console.log('working ')
+      jumpTo('body');
     } else return;
   }
   return (

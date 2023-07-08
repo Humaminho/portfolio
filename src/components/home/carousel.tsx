@@ -12,6 +12,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>html</title>
 			<circle cx="15.6002" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
@@ -28,6 +29,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>css</title>
 			<circle cx="15.2804" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
@@ -44,6 +46,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>javascript</title>
 			<circle cx="14.9606" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
@@ -60,6 +63,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>typescript</title>
 			<circle cx="15.6408" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
@@ -76,6 +80,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>react</title>
 			<circle cx="15.3209" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
@@ -92,6 +97,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>next</title>
 			<g clipPath="url(#clip0_138_49)">
 				<path
 					fillRule="evenodd"
@@ -115,6 +121,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>sass</title>
 			<path
 				d="M15.3619 0C23.6015 0 30.282 6.68045 30.282 14.9201C30.282 23.1597 23.6015 29.8401 15.3619 29.8401C7.12235 29.8401 0.441895 23.1597 0.441895 14.9201C0.441895 6.68045 7.12235 0 15.3619 0ZM12.3966 19.8909C12.6142 20.6929 12.5905 21.4426 12.3667 22.119L12.2859 22.3428C12.2561 22.4186 12.2213 22.492 12.1889 22.5616C12.0149 22.9222 11.7836 23.2579 11.4989 23.5687C10.631 24.5124 9.42004 24.8705 8.90032 24.5696C8.34082 24.2438 8.61933 22.9097 9.62643 21.8467C10.7094 20.7053 12.2623 19.9705 12.2623 19.9705V19.9668L12.3966 19.8909ZM24.7193 6.38703C24.0454 3.73499 19.6502 2.86341 15.4913 4.34174C13.0183 5.22078 10.3389 6.60212 8.41293 8.40372C6.12146 10.5435 5.75716 12.4085 5.90761 13.1881C6.43851 15.9371 10.2058 17.735 11.755 19.0691V19.0765C11.2987 19.3003 7.95538 20.9776 7.17208 22.7133C6.33283 24.541 7.30263 25.8477 7.93673 26.0144C9.89499 26.5565 11.9092 25.5668 12.9909 23.9641C14.0353 22.3962 13.9433 20.382 13.4932 19.3936C14.1099 19.2257 14.836 19.1511 15.7685 19.2643C18.3808 19.5627 18.903 21.2039 18.7898 21.8753C18.6779 22.5454 18.1396 22.9371 17.9518 23.049C17.7653 23.1621 17.7094 23.1982 17.7268 23.274C17.7454 23.3859 17.8399 23.3859 17.9879 23.3673C18.193 23.33 19.3506 22.8078 19.4065 21.5383C19.4625 19.9344 17.9319 18.1453 15.2103 18.1813C14.0913 18.2012 13.3813 18.2945 12.879 18.4996C12.845 18.4476 12.8005 18.4031 12.7485 18.3691C11.0699 16.56 7.95538 15.2918 8.08593 12.886C8.12323 12.0094 8.44029 9.69803 14.054 6.90052C18.6605 4.60532 22.3358 5.24067 22.9699 6.63942C23.8813 8.63374 21.0104 12.3463 16.2174 12.886C14.3897 13.0911 13.4385 12.3836 13.1948 12.1213C12.935 11.8415 12.8977 11.8229 12.8044 11.8801C12.6552 11.9547 12.7485 12.1971 12.8044 12.3463C12.9536 12.7193 13.5318 13.3721 14.5401 13.7078C15.4154 13.9875 17.5614 14.1542 20.1351 13.1483C23.0246 12.0305 25.2813 8.91473 24.6285 6.30372L24.7193 6.38703Z"
 				fill="currentColor"
@@ -129,6 +136,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>tailwind</title>
 			<circle cx="14.9201" cy="14.9201" r="14.9201" fill="currentColor" />
 			<g clipPath="url(#clip0_140_54)">
 				<path
@@ -175,6 +183,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>firebase</title>
 			<ellipse
 				cx="15.8822"
 				cy="14.9203"
@@ -209,6 +218,7 @@ export default function Carousel() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>git</title>
 			<circle cx="15.6818" cy="14.9201" r="14.9201" fill="currentColor" />
 			<path
 				className="text-white dark:text-black"
