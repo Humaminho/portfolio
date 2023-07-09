@@ -111,7 +111,7 @@ export default function Home() {
 							title="BLUEVIES"
 						/>
 						<ProjectMini
-							src="/images/desaign-shot.png"
+							src="/images/artwise-display.png"
 							title="ARTWISE"
 						/>
 					</div>

@@ -4,39 +4,30 @@ import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 export default function Logo() {
   return (
 		<a
-			href="http://localhost:3000/"
-			className="text-l-header dark:text-d-header"
+			href="https://www.humam.works/"
+			className="text-black dark:text-white hover:text-l-emph dark:hover:text-d-emph"
 			onMouseOver={expandCursor}
 			onMouseLeave={shrinkCursor}
 		>
 			<svg
-				width="40"
+				width="35"
 				height="40"
-				viewBox="0 0 228 222"
+				viewBox="0 0 160 184"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
-        className='font-white'
 			>
 				<path
-					d="M13.7191 31.1798L112.871 0L213.27 31.1798L227.612 52.382V178.348L127.213 222H99.7753L0 176.707V51.1348L13.7191 31.1798Z"
+					d="M76.2537 0.208321L76.194 31.7083L41.1533 53.1419L76.1126 74.7082L76.087 88.2082L61.57 97.1807L25.1127 74.6116L25.0284 119.112L0 134.064L0.169519 44.5643L76.2537 0.208321Z"
 					fill="currentColor"
 				/>
-				<path d="M23 62L103 87V199L23 162.687V62Z" fill="#02041D" />
-				<path d="M205 62L125 87V199L205 162.991V62Z" fill="#939BE3" />
 				<path
-					d="M34 46L113.5 70.5L103 87L23 62L34 46Z"
-					fill="#1B2B54"
+					d="M159.477 134.766L134.506 119.219L134.59 75.2187L95.9065 97.436L82.3797 88.4982L82.4054 74.9104L120.527 53.6556L82.5306 31.9105L82.5903 0.410608L159.646 45.2661L159.477 134.766Z"
+					fill="currentColor"
 				/>
 				<path
-					d="M113.5 70.5L194 46L205 62L125 87L113.5 70.5Z"
-					fill="#DBDEFF"
+					d="M2.12549 140.41L27.8599 125.181L66.2114 146.748L65.7234 102.142L78.6309 94.5136L91.9775 102.192L91.8963 145.012L129.432 122.481L156.626 139.522L79.9006 183.248L2.12549 140.41Z"
+					fill="currentColor"
 				/>
-				<path d="M103 87H113H125V199H103V87Z" fill="#1B2B54" />
-				<path
-					d="M34 46.0164L113.503 21L194 46.0164L113.503 70.5L34 46.0164Z"
-					fill="#939BE3"
-				/>
-				<path d="M113.5 70.5L125 87H103L113.5 70.5Z" fill="#939BE3" />
 			</svg>
 		</a>
   );

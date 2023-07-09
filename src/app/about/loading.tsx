@@ -1,5 +1,5 @@
 export default function Loading() {
   return (
-    <div>Loading emiga</div>
+    <div className=" h-screen">Loading emiga</div>
   )
 }

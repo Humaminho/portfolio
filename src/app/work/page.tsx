@@ -183,8 +183,8 @@ export default function Work() {
 			],
 		},
 		{
-			src: '/images/desaign-shot.png',
-			title: 'SOME PROJECT',
+			src: '/images/artwise-display.png',
+			title: 'ARTWISE',
 			description:
 				"Artwise Creative is a digital agency website I developed for a client, using Next.js and Tailwind CSS. The website was customized to the client's preferences to ensure that it met their specific needs and requirements.",
 			features: [

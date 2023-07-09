@@ -52,11 +52,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] make skills & tools infinite animation
 - [x] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
 - [x] Add resume button
-- [ ] Fix light theme flickering
 - [x] Add skill stack components
-- [ ] Add loading screen
-- [ ] Change background (noise)
-- [x] Add Logo and favicon (change later)
-- [ ] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
+- [x] Change background
+- [x] Add Logo and favicon
 - [x] Add urls to the links
-
+- [ ] Add loading screen
+- [ ] Fix light theme flickering
+- [ ] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
+- [ ] Add resume modal

@@ -22,11 +22,12 @@ export default function About() {
 						<p className="pb-4 leading-paragraph">
 							That&apos;s when a friend of mine suggested
 							exploring programming languages, and I gave it a
-							try, I started learning HTML, CSS, and JavaScript
-							and soon I realised that I found my passion. I loved
-							the process of creating visually pleasing websites,
-							solving problems, and bringing ideas to life through
-							coding.
+							try, I started learning HTML, CSS, and JavaScript in
+							the Odin Project Curriculum, when I got good
+							foundation in javascript, I switched to learning by
+							myself by building projects. And I loved the process of
+							creating visually pleasing websites, solving
+							problems, and bringing ideas to life through coding.
 						</p>
 						<p className="pb-4 leading-paragraph">
 							Since then, I&apos;ve been enjoying the process of
@@ -38,8 +39,13 @@ export default function About() {
 							<TextLink href="/work" text="Check out my work!" />
 						</p>
 					</div>
-          <Image className='hidden lg:block' src="/images/abt-img.png" width={1500} height={1500} alt="3D abstract shape" />
-					
+					<Image
+						className="hidden lg:block"
+						src="/images/abt-img.png"
+						width={1500}
+						height={1500}
+						alt="3D abstract shape"
+					/>
 				</section>
 			</main>
 		</PageWrapper>
