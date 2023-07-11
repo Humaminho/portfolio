@@ -41,7 +41,7 @@ export default function About() {
 					</div>
 					<Image
 						className="hidden lg:block"
-						src="/images/abt-img.png"
+						src="/images/about-me.png"
 						width={1500}
 						height={1500}
 						alt="3D abstract shape"

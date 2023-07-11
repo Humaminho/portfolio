@@ -32,23 +32,20 @@ export default function Home() {
 							ABOUT ME_
 						</h2>
 						<p className="pb-4 leading-paragraph">
-							I&apos;m Humam Kharbouch, a front-end web developer,
+							I&apos;m Humam Kharbouch, I&apos;m 23 and I&apos;m
 							passionate about creating beautiful and functional
 							websites with smooth user experiences.
 						</p>
 						<p className="pb-4 leading-paragraph">
 							By leveraging cutting-edge technologies, I aspire to
 							create digital experiences that meet worldwide
-							standards. Specializing in Next.js and
-							React.js, I bring interactivity and dynamism to web
+							standards. Specializing in Next.js and React.js, I
+							bring interactivity and dynamism to web
 							applications.
 						</p>
 						<p className="leading-paragraph">
 							Interested?{' '}
-							<TextLink
-								text="Learn my story."
-								href="/about"
-							/>
+							<TextLink text="Learn my story." href="/about" />
 						</p>
 					</div>
 				</section>

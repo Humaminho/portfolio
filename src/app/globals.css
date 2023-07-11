@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-  background: rgba(154, 16, 99, 0.9);
-  color: white;
+  background: rgba(255, 255, 255);
+  color: rgb(73, 33, 182);
 }
 
 html::-webkit-scrollbar {
@@ -30,4 +30,17 @@ html::-webkit-scrollbar-thumb {
 
 .no-scroll {
 	overflow: hidden;
+}
+
+.pdf::-webkit-scrollbar {
+	width: 10px;
+}
+
+.pdf::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.pdf::-webkit-scrollbar-thumb {
+	background: rgb(34, 10, 180, 0.5);
+	border-radius: 10px;
 }

@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
-export default function ThemeSwitch({setTheme, theme, open, setOpen}: {setTheme: Function, theme: string, open: boolean, setOpen: Function}) {
+export default function ThemeBtn({setTheme, theme, open, setOpen}: {setTheme: Function, theme: string, open: boolean, setOpen: Function}) {
 
   useEffect(() => {
 		const memo = localStorage?.getItem('theme');
@@ -24,17 +24,6 @@ export default function ThemeSwitch({setTheme, theme, open, setOpen}: {setTheme:
 		setThemeMemo(theme);
 	}, [theme]);
 
-	useEffect(() => {
-		const dropdown = document.getElementById('theme-dropdown');
-		if (open) {
-			dropdown?.classList.remove('hidden');
-			dropdown?.classList.add('block');
-		} else {
-			dropdown?.classList.remove('block');
-			dropdown?.classList.add('hidden');
-		}
-	}, [open]);
-
 	return (
 		<>
 			<div className="border-l-text dark:border-d-text hover:border-l-emph dark:hover:border-d-emph border rounded-full relative theme-icon">
@@ -47,7 +36,8 @@ export default function ThemeSwitch({setTheme, theme, open, setOpen}: {setTheme:
 						xmlns="http://www.w3.org/2000/svg"
 						className="p-1 hover:text-l-emph dark:hover:text-d-emph"
 						onClick={() => {
-							open === false ? setOpen(true) : setOpen(false);
+							// open === false ? setOpen(true) : setOpen(false)
+              setOpen(true);
 						}}
 						onMouseOver={expandCursor}
 						onMouseLeave={shrinkCursor}
@@ -70,7 +60,8 @@ export default function ThemeSwitch({setTheme, theme, open, setOpen}: {setTheme:
 						className="bi bi-brightness-high-fill p-[4px] hover:text-l-emph dark:hover:text-d-emph "
 						viewBox="0 0 16 16"
 						onClick={() => {
-							open === false ? setOpen(true) : setOpen(false);
+							// open === false ? setOpen(true) : setOpen(false)
+							setOpen(true);
 						}}
 						onMouseOver={expandCursor}
 						onMouseLeave={shrinkCursor}
