@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-  background: rgba(255, 255, 255);
-  color: rgb(73, 33, 182);
+	background: rgba(255, 255, 255);
+	color: rgb(73, 33, 182);
 }
 
 html::-webkit-scrollbar {
@@ -25,7 +25,7 @@ html::-webkit-scrollbar-thumb {
 	padding: 0;
 	margin: 0;
 	transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  cursor: none !important;
+	cursor: none !important;
 }
 
 .no-scroll {

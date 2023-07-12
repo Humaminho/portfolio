@@ -1,6 +1,17 @@
 import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
-export default function ResumeBtn({ open, setOpen }: { open: Boolean; setOpen: Function }) {
+export default function ResumeBtn({
+	open,
+	setOpen,
+}: {
+	open: Boolean;
+	setOpen: Function;
+}) {
+	function openModal(): void {
+		setOpen(true);
+		const html = document.querySelector('html');
+		html?.classList.add('no-scroll');
+	}
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -11,9 +22,7 @@ export default function ResumeBtn({ open, setOpen }: { open: Boolean; setOpen: F
 			viewBox="0 0 16 16"
 			onMouseOver={expandCursor}
 			onMouseOut={shrinkCursor}
-			onClick={() => {
-        setOpen(true);
-      }}
+			onClick={openModal}
 		>
 			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
 			<path

@@ -51,7 +51,7 @@ export default function ThemeModal({
 							Light
 						</button>
 						<button
-							className="pl-3 py-2 border-d-border text-start text-l-border dark:text-d-border"
+							className="pl-3 py-2 border-d-border text-start text-gray-500 dark:text-gray-700"
 							onMouseOver={soonCursor}
 							onMouseLeave={shrinkCursor}
 						>

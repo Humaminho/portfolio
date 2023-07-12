@@ -10,26 +10,29 @@ export default function ResumeModal({
 	open: Boolean;
 	setOpen: Function;
 }) {
+	function closeModal() {
+		setOpen(false);
+		const html = document.querySelector('html');
+		html?.classList.remove('no-scroll');
+	}
 
 	return (
 		<>
 			{open && (
 				<div
 					className="layer fixed top-0 right-0 left-0 bottom-0 bg-l-header dark:bg-d-header backdrop-blur-xl z-40"
-					onClick={() => {
-						setOpen(false);
-					}}
+					onClick={closeModal}
 				></div>
 			)}
 			{open && (
-				<div className="fixed flex flex-col justify-between p-8 my-9 bg-l-header dark:bg-d-header border border-l-border dark:border-d-border rounded-lg z-50 top-0 bottom-0 right-1/2 w-[600px] translate-x-1/2 backdrop-blur-md">
+				<div className="fixed flex flex-col gap-8 p-8 md:p-10 m-4 md:m-0 sm:m-8 md:min-w-[600px] bg-l-header dark:bg-d-header border border-l-border dark:border-d-border rounded-lg top-12 bottom-12 md:right-1/2 md:translate-x-1/2 backdrop-blur-md z-50">
 					<div className="flex justify-between items-end">
 						<div
 							className="flex items-center gap-2 text-l-text dark:text-d-text hover:text-l-emph dark:hover:text-d-emph"
 							onMouseOver={expandCursor}
 							onMouseOut={shrinkCursor}
 							onClick={() => {
-								setOpen(false);
+								closeModal();
 								shrinkCursor();
 							}}
 						>
@@ -61,7 +64,7 @@ export default function ResumeModal({
 								<path
 									d="M9 24V30H31V24M20 9V26M20 26L13 19M20 26L27 19"
 									stroke="currentColor"
-									stroke-width="2"
+									strokeWidth="2"
 								/>
 								<rect
 									x="0.5"
@@ -70,7 +73,7 @@ export default function ResumeModal({
 									height="39"
 									rx="4.5"
 									stroke="currentColor"
-									stroke-width="2"
+									strokeWidth="2"
 								/>
 							</svg>
 						</a>
