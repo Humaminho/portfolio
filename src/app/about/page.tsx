@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function About() {
 	return (
-		<PageWrapper>
-			<main id="about" className="px-7 sm:px-10 md:px-12 lg:px-16">
+		<div id="about">
+			<main className="max-w-7xl mx-auto px-7 sm:px-10 md:px-12 lg:px-16">
 				<section className="grid lg:grid-cols-2 pt-24 items-center md:items-center pb-24 lg:pb-36 lg:gap-20">
 					<div className="text-sm md:text-base pb-12 md:pb-0 md:max-w-[670px] lg:max-w-none">
 						<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xltext-2xl">
@@ -25,8 +25,8 @@ export default function About() {
 							try, I started learning HTML, CSS, and JavaScript in
 							the Odin Project Curriculum, when I got good
 							foundation in javascript, I switched to learning by
-							myself by building projects. And I loved the process of
-							creating visually pleasing websites, solving
+							myself by building projects. And I loved the process
+							of creating visually pleasing websites, solving
 							problems, and bringing ideas to life through coding.
 						</p>
 						<p className="pb-4 leading-paragraph">
@@ -48,6 +48,6 @@ export default function About() {
 					/>
 				</section>
 			</main>
-		</PageWrapper>
+		</div>
 	);
 }

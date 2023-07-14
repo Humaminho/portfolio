@@ -4,17 +4,13 @@ import ContactBtn from '@/components/home/contact-btn';
 import '../styles/index.css';
 import TextAnchor from '@/components/common/text-anchor';
 import TextLink from '@/components/common/text-link';
-import PageWrapper from '@/components/common/page-wrapper';
 import Carousel from '@/components/home/carousel';
 import ChangingText from '@/components/home/changing-text';
 
 export default function Home() {
 	return (
-		<PageWrapper>
-			<main
-				id="home"
-				className="px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16"
-			>
+		<div id="home">
+			<main className="max-w-7xl mx-auto px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16 overflow-x-hidden">
 				<section className="pt-24 flex items-center justify-start">
 					<div className="flex flex-col items-start">
 						<h1 className="text-4xl font-black dark:font-white pb-1 sm:text-5xl md:text-6xl lg:text-7xl">
@@ -114,6 +110,6 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-		</PageWrapper>
+		</div>
 	);
 }

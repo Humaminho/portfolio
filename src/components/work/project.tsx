@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 import ImageWrapper from '../common/image-wrapper';
-import { JsxElement } from 'typescript';
+import { privateCursor } from '@/utils/cursorActions';
 
 export default function Project({
 	src,
@@ -12,6 +12,7 @@ export default function Project({
 	github,
 	live,
 	stack,
+	hasGitRepo,
 }: {
 	src: string;
 	title: string;
@@ -20,6 +21,7 @@ export default function Project({
 	github: string;
 	live: string;
 	stack: JSX.Element[];
+	hasGitRepo: boolean;
 }) {
 	return (
 		<ImageWrapper>
@@ -60,15 +62,25 @@ export default function Project({
 						>
 							Live demo
 						</a>
-						<a
-							href={github}
-							target="_blank"
-							className="font-semibold hover:text-l-emph dark:hover:text-d-emph"
-							onMouseOver={expandCursor}
-							onMouseLeave={shrinkCursor}
-						>
-							Github
-						</a>
+						{hasGitRepo ? (
+							<a
+								href={github}
+								target="_blank"
+								className="font-semibold hover:text-l-emph dark:hover:text-d-emph"
+								onMouseOver={expandCursor}
+								onMouseLeave={shrinkCursor}
+							>
+								Github
+							</a>
+						) : (
+							<a
+								className="font-semibold text-gray-500 dark:text-gray-600 px-1 py-3"
+								onMouseOver={privateCursor}
+								onMouseLeave={shrinkCursor}
+							>
+								Github
+							</a>
+						)}
 					</div>
 				</div>
 			</div>

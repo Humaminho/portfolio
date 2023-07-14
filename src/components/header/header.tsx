@@ -16,33 +16,35 @@ export default function Header() {
 
 	return (
 		<>
-			<header className="flex justify-between items-center sticky top-0 z-40 px-7 sm:px-10 md:px-14 lg:px-16 py-2 border-l-border border-b dark:border-d-border bg-l-header dark:bg-d-header backdrop-blur-md">
-				<Logo />
-				<nav className="hidden sm:block">
-					<ul className="flex font-semibold items-end">
-						<li>
-							<HeaderLink text="WORK" href="/work" />
-						</li>
-						<li>
-							<HeaderLink text="HOME" href="/" />
-						</li>
-						<li>
-							<HeaderLink text="ABOUT" href="/about" />
-						</li>
-					</ul>
-				</nav>
-				<div className="text-l-text dark:text-d-text flex gap-5 md:gap-6 lg:gap-7 items-center">
-					<ResumeBtn
-						open={openResumeModal}
-						setOpen={setOpenResumeModal}
-					/>
-					<ThemeBtn
-						theme={theme}
-						setTheme={setTheme}
-						open={openThemeModal}
-						setOpen={setOpenThemeModal}
-					/>
-					<MenuBtn />
+			<header className="sticky top-0 z-40 border-l-border border-b dark:border-d-border bg-l-header dark:bg-d-header backdrop-blur-md">
+				<div className="max-w-7xl mx-auto flex justify-between items-center px-7 sm:px-10 md:px-14 lg:px-16 py-2">
+					<Logo />
+					<nav className="hidden sm:block">
+						<ul className="flex font-semibold items-end">
+							<li>
+								<HeaderLink text="WORK" href="/work" />
+							</li>
+							<li>
+								<HeaderLink text="HOME" href="/" />
+							</li>
+							<li>
+								<HeaderLink text="ABOUT" href="/about" />
+							</li>
+						</ul>
+					</nav>
+					<div className="text-l-text dark:text-d-text flex gap-5 md:gap-6 lg:gap-7 items-center">
+						<ResumeBtn
+							open={openResumeModal}
+							setOpen={setOpenResumeModal}
+						/>
+						<ThemeBtn
+							theme={theme}
+							setTheme={setTheme}
+							open={openThemeModal}
+							setOpen={setOpenThemeModal}
+						/>
+						<MenuBtn />
+					</div>
 				</div>
 			</header>
 			<Menu />

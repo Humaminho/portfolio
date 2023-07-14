@@ -26,4 +26,11 @@ function soonCursor() {
 	}
 }
 
-export { expandCursor, shrinkCursor, soonCursor, typeCursor };
+function privateCursor() {
+	const cursor = document.querySelector('.cursor');
+	if (cursor) {
+		cursor.setAttribute('id', 'private');
+	}
+}
+
+export { expandCursor, shrinkCursor, soonCursor, typeCursor, privateCursor};

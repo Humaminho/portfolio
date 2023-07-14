@@ -10,6 +10,7 @@ interface Project {
 	github: string;
 	live: string;
 	stack: JSX.Element[];
+  hasGitRepo: boolean;
 }
 
 export default function Work() {
@@ -87,6 +88,7 @@ export default function Work() {
 					/>
 				</svg>,
 			],
+			hasGitRepo: true,
 		},
 		{
 			src: '/images/bluevies-shot.png',
@@ -181,6 +183,7 @@ export default function Work() {
 					</defs>
 				</svg>,
 			],
+			hasGitRepo: true,
 		},
 		{
 			src: '/images/artwise-display.png',
@@ -192,8 +195,8 @@ export default function Work() {
 				'Contact form that uses Pipedream to receive emails from potential clients.',
 				'Use of Flowbite UI components and libraries such as Axios, Formik, and Yup.',
 			],
-			github: 'https://github.com/humaminho',
-			live: 'https://www.google.com/',
+			github: 'N/A',
+			live: 'https://omar-agency.vercel.app/',
 			stack: [
 				<svg
 					className="h-full w-auto"
@@ -276,12 +279,13 @@ export default function Work() {
 					</defs>
 				</svg>,
 			],
+			hasGitRepo: false,
 		},
 	];
 
 	return (
-		<PageWrapper>
-			<main id="work" className="px-7 sm:px-10 md:px-12 lg:px-16">
+		<div id="work">
+			<main className="max-w-7xl mx-auto px-7 sm:px-10 md:px-12 lg:px-16">
 				<section className="flex flex-col py-24 items-start">
 					<div>
 						<h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>
@@ -297,6 +301,7 @@ export default function Work() {
 										github={project.github}
 										live={project.live}
 										stack={project.stack}
+										hasGitRepo={project.hasGitRepo}
 									/>
 								);
 							})}
@@ -304,6 +309,6 @@ export default function Work() {
 					</div>
 				</section>
 			</main>
-		</PageWrapper>
+		</div>
 	);
 }
