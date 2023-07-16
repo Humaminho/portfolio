@@ -6,40 +6,41 @@ import TextAnchor from '@/components/common/text-anchor';
 import TextLink from '@/components/common/text-link';
 import Carousel from '@/components/home/carousel';
 import ChangingText from '@/components/home/changing-text';
+import FadeWrapper from '@/components/common/fade-wrapper';
 
 export default function Home() {
 	return (
 		<div id="home">
 			<main className="max-w-7xl mx-auto px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16 overflow-x-hidden">
-				<section className="pt-24 flex items-center justify-start">
-					<div className="flex flex-col items-start">
-						<h1 className="text-4xl font-black dark:font-white pb-1 sm:text-5xl md:text-6xl lg:text-7xl">
-							Hi I&apos;m Humam <br /> I&apos;m a <ChangingText />
-						</h1>
-						<p className="text-sm md:text-base lg:text-lg font-light pb-4 md:pb-6 lg:pb-8">
-							Front end - React.js - Next.js
-						</p>
-						<ContactBtn />
-					</div>
-				</section>
+          <section className="pt-24 flex items-center justify-start">
+            <div className="flex flex-col items-start">
+              <h1 className="text-4xl font-black dark:font-white pb-1 sm:text-5xl md:text-6xl lg:text-7xl">
+                Hi I&apos;m Humam <br /> I&apos;m a <ChangingText />
+              </h1>
+              <p className="text-sm md:text-base lg:text-lg font-light pb-4 md:pb-6 lg:pb-8">
+                Front end - React.js - Next.js
+              </p>
+              <ContactBtn />
+            </div>
+          </section>
 				<section className="flex md:max-w-3xl mt-32">
 					<div className="text-sm lg:text-base">
 						<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xl">
 							ABOUT ME_
 						</h2>
-						<p className="pb-4 leading-paragraph">
+						<p className="pb-4">
 							I&apos;m Humam Kharbouch, I&apos;m 23 and I&apos;m
 							passionate about creating beautiful and functional
 							websites with smooth user experiences.
 						</p>
-						<p className="pb-4 leading-paragraph">
+						<p className="pb-4">
 							By leveraging cutting-edge technologies, I aspire to
 							create digital experiences that meet worldwide
 							standards. Specializing in Next.js and React.js, I
 							bring interactivity and dynamism to web
 							applications.
 						</p>
-						<p className="leading-paragraph">
+						<p className="">
 							Interested?{' '}
 							<TextLink text="Learn my story." href="/about" />
 						</p>
@@ -58,22 +59,22 @@ export default function Home() {
 							<h2 className="text-2xl font-bold pb-5 sm:pb-6 md:pb-8 lg:pb-10 md:text-3xl lg:text-4xl">
 								SKILL & TOOLS_
 							</h2>
-							<p className="pb-4 leading-paragraph">
+							<p className="pb-4 ">
 								I specialize in front-end web development.
 							</p>
-							<p className="pb-4 leading-paragraph">
+							<p className="pb-4 ">
 								HTML, CSS, JS (Typescript), building small and
 								medium size web apps with Next.js, React.js,
 								Tailwind, Sass, etc.
 							</p>
-							<p className="pb-4 leading-paragraph">
+							<p className="pb-4 ">
 								I am excited to continue learning and growing as
 								a front-end web developer and am always looking
 								for new challenges and opportunities to stay
 								up-to-date with the latest technologies and
 								expand my skillset.
 							</p>
-							<p className="pb-5 leading-paragraph">
+							<p className="pb-5 ">
 								Visit my{' '}
 								<TextAnchor
 									text="Linkedin"

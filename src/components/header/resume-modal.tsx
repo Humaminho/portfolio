@@ -26,7 +26,7 @@ export default function ResumeModal({
 			)}
 			{open && (
 				<div className="fixed flex flex-col gap-8 p-8 md:p-10 m-4 md:m-0 sm:m-8 md:min-w-[600px] bg-l-header dark:bg-d-header border border-l-border dark:border-d-border rounded-lg top-12 bottom-12 md:right-1/2 md:translate-x-1/2 backdrop-blur-md z-50">
-					<div className="flex justify-between items-end">
+					<div className="flex justify-between items-center">
 						<div
 							className="flex items-center gap-2 text-l-text dark:text-d-text hover:text-l-emph dark:hover:text-d-emph"
 							onMouseOver={expandCursor}
@@ -55,8 +55,8 @@ export default function ResumeModal({
 								onMouseOver={expandCursor}
 								onMouseOut={shrinkCursor}
 								className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-l-emph dark:hover:text-d-emph"
-								width="35"
-								height="35"
+								width="30"
+								height="30"
 								viewBox="0 0 40 40"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
@@ -66,6 +66,7 @@ export default function ResumeModal({
 									stroke="currentColor"
 									strokeWidth="2"
 								/>
+                <title>Download pdf</title>
 								<rect
 									x="0.5"
 									y="0.5"
@@ -84,7 +85,7 @@ export default function ResumeModal({
 							width={900}
 							height={1200}
 							alt="My resume"
-							className=""
+							className="pr-2"
 						/>
 					</div>
 				</div>
