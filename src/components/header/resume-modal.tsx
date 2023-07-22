@@ -50,7 +50,7 @@ export default function ResumeModal({
 							</svg>
 							<p className=" font-extralight">GO BACK</p>
 						</div>
-						<a href="/other/Humam-cv.pdf" download>
+						<a href="/other/Humam-CV.pdf" download>
 							<svg
 								onMouseOver={expandCursor}
 								onMouseOut={shrinkCursor}
@@ -81,7 +81,7 @@ export default function ResumeModal({
 					</div>
 					<div className="pdf overflow-y-scroll h-5/6">
 						<Image
-							src="/images/cv.jpg"
+							src="/images/CV-image.jpg"
 							width={900}
 							height={1200}
 							alt="My resume"

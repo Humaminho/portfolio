@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-	background: rgba(255, 255, 255);
-	color: rgb(73, 33, 182);
+	background: rgb(73, 33, 182);
+	color: rgb(0, 0, 0);
 }
 
 html::-webkit-scrollbar {

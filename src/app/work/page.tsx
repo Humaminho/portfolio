@@ -1,6 +1,6 @@
 import Project from '@/components/work/project';
 import '../../styles/index.css';
-import PageWrapper from '@/components/common/page-wrapper';
+import Reveal from '@/components/common/reveal';
 
 interface Project {
 	src: string;
@@ -10,7 +10,7 @@ interface Project {
 	github: string;
 	live: string;
 	stack: JSX.Element[];
-  hasGitRepo: boolean;
+	hasGitRepo: boolean;
 }
 
 export default function Work() {
@@ -288,7 +288,9 @@ export default function Work() {
 			<main className="max-w-7xl mx-auto px-7 sm:px-10 md:px-12 lg:px-16">
 				<section className="flex flex-col py-24 items-start">
 					<div>
-						<h2 className="text-2xl font-bold pb-8">PROJECTS_</h2>
+						<Reveal>
+              <h2 className="text-2xl font-bold pb-8">PROJECTS</h2>
+            </Reveal>
 						<div className="flex flex-col gap-16">
 							{projects.map((project) => {
 								return (
