@@ -24,7 +24,7 @@ export default function Project({
 	hasGitRepo: boolean;
 }) {
 	return (
-		<Reveal>
+		<Reveal delay={0.2}>
       <div className=" flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-12 w-full dark:sm:bg-d-header sm:bg-l-header sm:p-10 md:p-16 lg:p-10 sm:border sm:border-l-border sm:dark:border-d-border sm:rounded-lg sm:hover:border-gray-400 sm:hover:dark:border-gray-700">
         <Image
           className="w-full lg:w-0 grow rounded-lg self-center"
