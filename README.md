@@ -43,20 +43,16 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [x] Add custom cursor
 - [x] Fix backdrop blur issue
 - [x] Fix transformed elements overlaping issue
-- [x] Add transition between pages
 - [x] Fix custom cursor in mobile
 - [x] Nav: Navbar active link
-- [x] Add contact form functionality (later)
+- [x] Add contact form functionality
 
 - [x] Form validation and feedback message
 - [x] make skills & tools infinite animation
-- [x] Nav: Change footer link so that it scrolls to top instead of redirecting to the same page
 - [x] Add resume button
 - [x] Add skill stack components
 - [x] Change background
 - [x] Add Logo and favicon
 - [x] Add urls to the links
-- [ ] Add loading screen
-- [ ] Fix light theme flickering
-- [ ] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
-- [ ] Add resume modal
+- [x] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
+- [x] Add resume modal

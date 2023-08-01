@@ -11,6 +11,7 @@ export default function Home() {
 	return (
 		<div id="home">
 			<main
+				id="main"
 				className="max-w-7xl mx-auto px-7 flex flex-col gap-24 sm:gap-32 md:gap-48 lg:gap-60 sm:px-10 md:px-12 lg:px-16 overflow-x-hidden"
 			>
 				<section className="pt-24 flex items-center justify-start">
@@ -68,7 +69,7 @@ export default function Home() {
 				</section>
 				<section className="text-sm lg:text-base flex flex-col relative mb-20 sm:mb-24 md:mb-28 lg:mb-32">
 					<div className="flex items-center md:gap-10 lg:gap-32">
-						<Reveal width="100%">
+						<Reveal width="100%" className="hidden md:block">
 							<Image
 								className="hidden md:block w-72 lg:w-80 xl:w-96"
 								src="/images/3d-skills.png"
