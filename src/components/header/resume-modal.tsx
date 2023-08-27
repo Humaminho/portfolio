@@ -50,7 +50,7 @@ export default function ResumeModal({
 							</svg>
 							<p className=" font-extralight">GO BACK</p>
 						</div>
-						<a href="/other/Humam-CV.pdf" download>
+						<a href="/other/cv-humam.pdf" download>
 							<svg
 								onMouseOver={expandCursor}
 								onMouseOut={shrinkCursor}
@@ -66,7 +66,7 @@ export default function ResumeModal({
 									stroke="currentColor"
 									strokeWidth="2"
 								/>
-                <title>Download pdf</title>
+								<title>Download pdf</title>
 								<rect
 									x="0.5"
 									y="0.5"
@@ -81,11 +81,12 @@ export default function ResumeModal({
 					</div>
 					<div className="pdf overflow-y-scroll h-5/6">
 						<Image
-							src="/images/CV-image.jpg"
+							src="/images/cv-humam.webp"
 							width={900}
 							height={1200}
 							alt="My resume"
 							className="pr-2"
+							loading="lazy"
 						/>
 					</div>
 				</div>

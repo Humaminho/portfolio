@@ -13,7 +13,7 @@ export default function ProjectMini({
 	return (
 		<Link
 			href="/work"
-      onClick={shrinkCursor}
+			onClick={shrinkCursor}
 			onMouseOver={expandCursor}
 			onMouseLeave={shrinkCursor}
 			className="group flex flex-col items-center gap-6"
@@ -21,9 +21,10 @@ export default function ProjectMini({
 			<Image
 				className="w-full rounded-lg group-hover:scale-95 group-hover:rounded-xl"
 				src={src}
-				height={5000}
-				width={5000}
+				height={568}
+				width={568}
 				alt="Project image"
+				loading="lazy"
 			></Image>
 			<div className="group-hover:text-l-emph dark:group-hover:text-d-emph flex gap-3 items-center">
 				<h3 className="text-lg sm:text-base lg:text-lg font-semibold">

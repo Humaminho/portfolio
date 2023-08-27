@@ -6,10 +6,11 @@ export default function AboutImg() {
 		<Reveal width="100%" delay={0.3} className=" col-span-3">
 			<Image
 				className="hidden lg:block"
-				src="/images/about-me.png"
-				width={1500}
-				height={1500}
+				src="/images/about-me.webp"
+				width={448.031}
+				height={464.273}
 				alt="3D abstract shape"
+				loading="lazy"
 			/>
 		</Reveal>
   );

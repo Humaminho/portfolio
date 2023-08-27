@@ -16,7 +16,7 @@ interface Project {
 export default function Work() {
 	const projects: Project[] = [
 		{
-			src: '/images/cozyshop-shot.png',
+			src: '/images/cozyshop.webp',
 			title: 'Cozy shop',
 			description:
 				'Cozy Shop is an e-commerce website showcasing a fictional clothing brand, specializing in comfortable and fashionable clothes. Made using React.js and Sass CSS.',
@@ -91,7 +91,7 @@ export default function Work() {
 			hasGitRepo: true,
 		},
 		{
-			src: '/images/bluevies-shot.png',
+			src: '/images/bluevies.webp',
 			title: 'BLUEVIES',
 			description:
 				'Bluevies is a movie search web application powered by the The Movie Database (TMDB) API. Developed with React and styled using Vanilla CSS.',
@@ -186,7 +186,7 @@ export default function Work() {
 			hasGitRepo: true,
 		},
 		{
-			src: '/images/artwise-display.png',
+			src: '/images/artwise.webp',
 			title: 'ARTWISE',
 			description:
 				"Artwise Creative is a digital agency website I developed for a client, using Next.js and Tailwind CSS. The website was customized to the client's preferences to ensure that it met their specific needs and requirements.",

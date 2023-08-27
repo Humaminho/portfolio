@@ -72,10 +72,11 @@ export default function Home() {
 						<Reveal width="100%" className="hidden md:block">
 							<Image
 								className="hidden md:block w-72 lg:w-80 xl:w-96"
-								src="/images/3d-skills.png"
+								src="/images/3d-skills.webp"
 								alt="nothing"
-								width={1000}
-								height={1000}
+								width={384}
+								height={322.477}
+								loading="lazy"
 							></Image>
 						</Reveal>
 						<div>
@@ -133,19 +134,19 @@ export default function Home() {
 					<div className="flex flex-col gap-16 sm:gap-8 sm:flex-row lg:gap-24">
 						<Reveal>
 							<ProjectMini
-								src="/images/cozyshop-shot.png"
+								src="/images/cozyshop.webp"
 								title="COZY SHOP"
 							/>
 						</Reveal>
 						<Reveal delay={0.2}>
 							<ProjectMini
-								src="/images/bluevies-shot.png"
+								src="/images/bluevies.webp"
 								title="BLUEVIES"
 							/>
 						</Reveal>
 						<Reveal delay={0.3}>
 							<ProjectMini
-								src="/images/artwise-display.png"
+								src="/images/artwise.webp"
 								title="ARTWISE"
 							/>
 						</Reveal>

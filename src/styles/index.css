@@ -23,7 +23,7 @@
 }
 
 .menu {
-  background-image: url("/images/menu-bg.png");
+  background-image: url("/images/menu-bg.webp");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -44,7 +44,7 @@
 
 @media only screen and (min-width: 768px) {
   #main {
-    background-image: url("/images/bigbox.png");
+    background-image: url("/images/box.webp");
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: top right;

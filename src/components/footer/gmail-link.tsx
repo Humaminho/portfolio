@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { expandCursor, shrinkCursor } from '@/utils/cursorActions';
 
 export default function GmailLink() {
-	const email = 'hu666mam@gmail.com';
+	const email = 'dev.humam@gmail.com';
 
 	const [copied, setCopied] = useState(false);
 
