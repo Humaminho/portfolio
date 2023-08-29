@@ -187,7 +187,7 @@ export default function Work() {
 		},
 		{
 			src: '/images/artwise.webp',
-			title: 'ARTWISE',
+			title: 'ARTWISE CREATIVE',
 			description:
 				"Artwise Creative is a digital agency website I developed for a client, using Next.js and Tailwind CSS. The website was customized to the client's preferences to ensure that it met their specific needs and requirements.",
 			features: [
@@ -196,7 +196,7 @@ export default function Work() {
 				'Use of Flowbite UI components and libraries such as Axios, Formik, and Yup.',
 			],
 			github: 'N/A',
-			live: 'https://omar-agency.vercel.app/',
+			live: 'https://artwise-creative.vercel.app/',
 			stack: [
 				<svg
 					className="h-full w-auto"

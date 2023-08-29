@@ -34,25 +34,3 @@ I welcome any feedback or suggestions to improve this portfolio website. If you 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Tasks list
-
-- [x] Add local storage to the theme switcher
-- [x] Add contact form feedback message
-- [x] Style scroll bar and ::selection
-- [x] Add custom cursor
-- [x] Fix backdrop blur issue
-- [x] Fix transformed elements overlaping issue
-- [x] Fix custom cursor in mobile
-- [x] Nav: Navbar active link
-- [x] Add contact form functionality
-
-- [x] Form validation and feedback message
-- [x] make skills & tools infinite animation
-- [x] Add resume button
-- [x] Add skill stack components
-- [x] Change background
-- [x] Add Logo and favicon
-- [x] Add urls to the links
-- [x] Tweaks: smoother cursor, theme modal, mini projects hover effect, dark mode shadow
-- [x] Add resume modal
