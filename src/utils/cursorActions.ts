@@ -1,9 +1,23 @@
-function expandCursor() {
+function throttle(func: () => void, delay: number) {
+	let lastExecuted = 0;
+
+	return function () {
+		const now = Date.now();
+		if (now - lastExecuted >= delay) {
+			func();
+			lastExecuted = now;
+		}
+	};
+}
+
+function expand() {
 	const cursor = document.querySelector('.cursor');
 	if (cursor) {
 		cursor.setAttribute('id', 'expand');
 	}
 }
+
+const expandCursor = throttle(expand, 100);
 
 function shrinkCursor() {
 	const cursor = document.querySelector('.cursor');
@@ -33,4 +47,4 @@ function privateCursor() {
 	}
 }
 
-export { expandCursor, shrinkCursor, soonCursor, typeCursor, privateCursor};
+export { expandCursor, shrinkCursor, soonCursor, typeCursor, privateCursor };
